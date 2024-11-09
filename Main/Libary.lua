@@ -3602,43 +3602,43 @@ function Library:CreateWindow(...)
                 local State = InputService.MouseIconEnabled;
         
                 -- Create the outline triangle (black)
-                local CursorOutline = Drawing.new('Triangle');
-                CursorOutline.Thickness = 2;
-                CursorOutline.Filled = true; -- Filled for the outline to create a border effect
-                CursorOutline.Color = Color3.new(0, 0, 0); -- Black color for the outline
-                CursorOutline.Visible = true;
+                local CursorOutline = Drawing.new('Triangle')
+                CursorOutline.Thickness = 1
+                CursorOutline.Filled = true -- Filled to create a solid outline
+                CursorOutline.Color = Color3.new(0, 0, 0) -- Black color for the outline
+                CursorOutline.Visible = true
         
-                -- Create the filled triangle (white)
-                local Cursor = Drawing.new('Triangle');
-                Cursor.Thickness = 1; 
-                Cursor.Filled = true; -- Fill for the inner triangle
-                Cursor.Color = Color3.new(1, 1, 1); -- White color for the filled triangle
-                Cursor.Visible = true;
+                -- Create the inner triangle (white, filled)
+                local Cursor = Drawing.new('Triangle')
+                Cursor.Thickness = 1
+                Cursor.Filled = true -- Fill for the inner triangle to make it solid white
+                Cursor.Color = Color3.new(1, 1, 1) -- White color for the inner triangle
+                Cursor.Visible = true
         
                 while Toggled and ScreenGui.Parent do
-                    InputService.MouseIconEnabled = false; -- Disable the default mouse icon
+                    InputService.MouseIconEnabled = false -- Disable the default mouse icon
         
-                    local mPos = InputService:GetMouseLocation();
+                    local mPos = InputService:GetMouseLocation()
         
-                    -- Update positions for the outline cursor (slightly larger for outline effect)
-                    CursorOutline.PointA = Vector2.new(mPos.X, mPos.Y);
-                    CursorOutline.PointB = Vector2.new(mPos.X + 18, mPos.Y + 8);
-                    CursorOutline.PointC = Vector2.new(mPos.X + 8, mPos.Y + 18);
+                    -- Update positions for the outline triangle (slightly larger)
+                    CursorOutline.PointA = Vector2.new(mPos.X, mPos.Y)
+                    CursorOutline.PointB = Vector2.new(mPos.X + 18, mPos.Y + 8)
+                    CursorOutline.PointC = Vector2.new(mPos.X + 8, mPos.Y + 18)
         
-                    -- Update positions for the inner white cursor (slightly smaller)
-                    Cursor.PointA = Vector2.new(mPos.X + 1, mPos.Y + 1);
-                    Cursor.PointB = Vector2.new(mPos.X + 15, mPos.Y + 7);
-                    Cursor.PointC = Vector2.new(mPos.X + 7, mPos.Y + 15);
+                    -- Update positions for the inner white triangle (slightly smaller for outline effect)
+                    Cursor.PointA = Vector2.new(mPos.X + 1, mPos.Y + 1)
+                    Cursor.PointB = Vector2.new(mPos.X + 16, mPos.Y + 7)
+                    Cursor.PointC = Vector2.new(mPos.X + 7, mPos.Y + 16)
         
-                    RenderStepped:Wait(); -- Ensure this runs every frame
-                end;
+                    RenderStepped:Wait() -- Ensure this runs every frame
+                end
         
-                InputService.MouseIconEnabled = State; -- Restore original mouse icon when toggled off
+                InputService.MouseIconEnabled = State -- Restore original mouse icon when toggled off
         
-                Cursor:Remove(); -- Cleanup
-                CursorOutline:Remove(); -- Cleanup
-            end);
-        end;
+                Cursor:Remove() -- Cleanup
+                CursorOutline:Remove() -- Cleanup
+            end)
+        end
         
         for _, Desc in next, Outer:GetDescendants() do
             local Properties = {};
