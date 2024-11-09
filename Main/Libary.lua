@@ -3597,44 +3597,46 @@ function Library:CreateWindow(...)
 
         if Toggled then
             Outer.Visible = true;
-
+        
             task.spawn(function()
-                -- TODO: add cursor fade?
                 local State = InputService.MouseIconEnabled;
-
-                local Cursor = Drawing.new('Triangle');
-                Cursor.Thickness = 1;
-                Cursor.Filled = true;
-                Cursor.Visible = true;
-
+        
+                -- Create the outline triangle (black)
                 local CursorOutline = Drawing.new('Triangle');
                 CursorOutline.Thickness = 1;
-                CursorOutline.Filled = false;
-                CursorOutline.Color = Color3.new(0, 0, 0);
+                CursorOutline.Filled = false; -- No fill for outline
+                CursorOutline.Color = Color3.new(0, 0, 0); -- Black color for the outline
                 CursorOutline.Visible = true;
-
+        
+                -- Create the filled triangle (white)
+                local Cursor = Drawing.new('Triangle');
+                Cursor.Thickness = 1; 
+                Cursor.Filled = true; -- Fill for the inner triangle
+                Cursor.Color = Color3.new(1, 1, 1); -- White color for the filled triangle
+                Cursor.Visible = true;
+        
                 while Toggled and ScreenGui.Parent do
-                    InputService.MouseIconEnabled = false;
-
+                    InputService.MouseIconEnabled = false; -- Disable the default mouse icon
+        
                     local mPos = InputService:GetMouseLocation();
-
-                    Cursor.Color = Library.AccentColor;
-
+        
+                    -- Update positions for the cursor
                     Cursor.PointA = Vector2.new(mPos.X, mPos.Y);
                     Cursor.PointB = Vector2.new(mPos.X + 16, mPos.Y + 6);
                     Cursor.PointC = Vector2.new(mPos.X + 6, mPos.Y + 16);
-
+        
+                    -- Update positions for the outline cursor
                     CursorOutline.PointA = Cursor.PointA;
                     CursorOutline.PointB = Cursor.PointB;
                     CursorOutline.PointC = Cursor.PointC;
-
-                    RenderStepped:Wait();
+        
+                    RenderStepped:Wait(); -- Ensure this runs every frame
                 end;
-
-                InputService.MouseIconEnabled = State;
-
-                Cursor:Remove();
-                CursorOutline:Remove();
+        
+                InputService.MouseIconEnabled = State; -- Restore original mouse icon when toggled off
+        
+                Cursor:Remove(); -- Cleanup
+                CursorOutline:Remove(); -- Cleanup
             end);
         end;
 
