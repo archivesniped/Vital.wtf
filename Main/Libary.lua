@@ -364,7 +364,6 @@ function Library:UpdateColorsUsingRegistry()
     -- Visible: false => Remove from active list.
 
     -- The above would be especially efficient for a rainbow menu color or live color-changing.
-    -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
 
     for Idx, Object in next, Library.Registry do
         for Property, ColorIdx in next, Object.Properties do
@@ -2873,14 +2872,6 @@ function Library:SetWatermark(Text)
     Library.WatermarkText.Text = Text;
 end;
 
-
--- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
--- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
--- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
--- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
--- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
--- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
--- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
 function Library:Notify(Text, Time)
     local XSize, YSize = Library:GetTextBounds(Text, Library.Font, 14);
 
@@ -3228,12 +3219,7 @@ function Library:CreateWindow(...)
                 Side.CanvasSize = UDim2.fromOffset(0, Side.UIListLayout.AbsoluteContentSize.Y);
             end);
         end;
-        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+
         function Tab:ShowTab()
             for _, Tab in next, Window.Tabs do
                 Tab:HideTab();
@@ -3524,11 +3510,6 @@ function Library:CreateWindow(...)
                         Tab:Resize();
                     end;
                 end);
-                -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-                -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-                -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-                -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
-             -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
 
                 Tab.Container = Container;
                 Tabbox.Tabs[Name] = Tab;
