@@ -3595,6 +3595,8 @@ function Library:CreateWindow(...)
         Toggled = (not Toggled);
         ModalElement.Modal = Toggled;
 
+    -- 11/9/24 Fixed custom mouse for following executors, Macsploit, Wave, & Nihon
+
         if Toggled then
             Outer.Visible = true;
         
