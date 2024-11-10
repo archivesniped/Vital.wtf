@@ -3664,17 +3664,24 @@ function Library:CreateWindow(...)
 
     Library:GiveSignal(InputService.InputBegan:Connect(function(Input, Processed)
         if type(Library.ToggleKeybind) == 'table' and Library.ToggleKeybind.Type == 'KeyPicker' then
-            if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode == Library.ToggleKeybind.Value then
-                if not Processed then
-                    task.spawn(Library.Toggle)
-                end
+            if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Library.ToggleKeybind.Value then
+                task.spawn(Library.Toggle)
             end
-        end
-    
-        if Input.KeyCode == Enum.KeyCode.RightControl or (Input.KeyCode == Enum.KeyCode.RightShift and not Processed) then
+        elseif Input.KeyCode == Enum.KeyCode.RightControl 
+            or Input.KeyCode == Enum.KeyCode.LeftControl
+            or Input.KeyCode == Enum.KeyCode.LeftAlt
+            or Input.KeyCode == Enum.KeyCode.RightAlt
+            or (Input.KeyCode == Enum.KeyCode.RightShift and not Processed) then
             task.spawn(Library.Toggle)
         end
     end))
+    
+    if Config.AutoShow then task.spawn(Library.Toggle) end
+    
+    Window.Holder = Outer;
+    
+    return Window;
+    end;
     
     if Config.AutoShow then task.spawn(Library.Toggle) end
     
