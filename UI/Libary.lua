@@ -3660,23 +3660,28 @@ function Library:CreateWindow(...)
         Fading = false;
     end
 
+    -- 11/10/24 Set any key to be able to close menu
+
     Library:GiveSignal(InputService.InputBegan:Connect(function(Input, Processed)
         if type(Library.ToggleKeybind) == 'table' and Library.ToggleKeybind.Type == 'KeyPicker' then
-            if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Library.ToggleKeybind.Value then
-                task.spawn(Library.Toggle)
+            if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode == Library.ToggleKeybind.Value then
+                if not Processed then
+                    task.spawn(Library.Toggle)
+                end
             end
-        elseif Input.KeyCode == Enum.KeyCode.RightControl or (Input.KeyCode == Enum.KeyCode.RightShift and (not Processed)) then
+        end
+    
+        if Input.KeyCode == Enum.KeyCode.RightControl or (Input.KeyCode == Enum.KeyCode.RightShift and not Processed) then
             task.spawn(Library.Toggle)
         end
     end))
-
+    
     if Config.AutoShow then task.spawn(Library.Toggle) end
-
-    Window.Holder = Outer;
-
-    return Window;
-end;
-
+    
+    Window.Holder = Outer
+    
+    return Window
+    
 local function OnPlayerChange()
     local PlayerList = GetPlayersString();
 
