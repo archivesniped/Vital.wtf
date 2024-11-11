@@ -364,6 +364,7 @@ function Library:UpdateColorsUsingRegistry()
     -- Visible: false => Remove from active list.
 
     -- The above would be especially efficient for a rainbow menu color or live color-changing.
+    -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
 
     for Idx, Object in next, Library.Registry do
         for Property, ColorIdx in next, Object.Properties do
@@ -2872,6 +2873,14 @@ function Library:SetWatermark(Text)
     Library.WatermarkText.Text = Text;
 end;
 
+
+-- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+-- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+-- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+-- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+-- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+-- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+-- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
 function Library:Notify(Text, Time)
     local XSize, YSize = Library:GetTextBounds(Text, Library.Font, 14);
 
@@ -3219,7 +3228,12 @@ function Library:CreateWindow(...)
                 Side.CanvasSize = UDim2.fromOffset(0, Side.UIListLayout.AbsoluteContentSize.Y);
             end);
         end;
-
+        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+        -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
         function Tab:ShowTab()
             for _, Tab in next, Window.Tabs do
                 Tab:HideTab();
@@ -3510,6 +3524,11 @@ function Library:CreateWindow(...)
                         Tab:Resize();
                     end;
                 end);
+                -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+                -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+                -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+                -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
+             -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
 
                 Tab.Container = Container;
                 Tabbox.Tabs[Name] = Tab;
@@ -3576,49 +3595,49 @@ function Library:CreateWindow(...)
         Toggled = (not Toggled);
         ModalElement.Modal = Toggled;
 
-    -- 11/9/24 Fixed custom mouse for following executors, Macsploit, Wave, & Nihon
-
         if Toggled then
             Outer.Visible = true;
-        
-            task.spawn(function()
-                local State = InputService.MouseIconEnabled;
-                
-                local CursorOutline = Drawing.new('Triangle')
-                CursorOutline.Thickness = 1
-                CursorOutline.Filled = true
-                CursorOutline.Color = Color3.new(0, 0, 0)
-                CursorOutline.Visible = true
-        
-                local Cursor = Drawing.new('Triangle')
-                Cursor.Thickness = 1
-                Cursor.Filled = true
-                Cursor.Color = Color3.new(1, 1, 1)
-                Cursor.Visible = true
-        
-                while Toggled and ScreenGui.Parent do
-                    InputService.MouseIconEnabled = false
-        
-                    local mPos = InputService:GetMouseLocation()
 
-                    CursorOutline.PointA = Vector2.new(mPos.X, mPos.Y)
-                    CursorOutline.PointB = Vector2.new(mPos.X + 18, mPos.Y + 8)
-                    CursorOutline.PointC = Vector2.new(mPos.X + 8, mPos.Y + 18)
-        
-                    Cursor.PointA = Vector2.new(mPos.X + 1, mPos.Y + 1)
-                    Cursor.PointB = Vector2.new(mPos.X + 16, mPos.Y + 7)
-                    Cursor.PointC = Vector2.new(mPos.X + 7, mPos.Y + 16)
-        
-                    RenderStepped:Wait()
-                end
-        
-                InputService.MouseIconEnabled = State
-        
-                Cursor:Remove()
-                CursorOutline:Remove()
-            end)
-        end
-        
+            task.spawn(function()
+                -- TODO: add cursor fade?
+                local State = InputService.MouseIconEnabled;
+
+                local Cursor = Drawing.new('Triangle');
+                Cursor.Thickness = 1;
+                Cursor.Filled = true;
+                Cursor.Visible = true;
+
+                local CursorOutline = Drawing.new('Triangle');
+                CursorOutline.Thickness = 1;
+                CursorOutline.Filled = false;
+                CursorOutline.Color = Color3.new(1, 1, 1);
+                CursorOutline.Visible = true;
+
+                while Toggled and ScreenGui.Parent do
+                    InputService.MouseIconEnabled = false;
+
+                    local mPos = InputService:GetMouseLocation();
+
+                    Cursor.Color = Library.AccentColor;
+
+                    Cursor.PointA = Vector2.new(mPos.X, mPos.Y);
+                    Cursor.PointB = Vector2.new(mPos.X + 16, mPos.Y + 6);
+                    Cursor.PointC = Vector2.new(mPos.X + 6, mPos.Y + 16);
+
+                    CursorOutline.PointA = Cursor.PointA;
+                    CursorOutline.PointB = Cursor.PointB;
+                    CursorOutline.PointC = Cursor.PointC;
+
+                    RenderStepped:Wait();
+                end;
+
+                InputService.MouseIconEnabled = State;
+
+                Cursor:Remove();
+                CursorOutline:Remove();
+            end);
+        end;
+
         for _, Desc in next, Outer:GetDescendants() do
             local Properties = {};
 
@@ -3660,8 +3679,6 @@ function Library:CreateWindow(...)
         Fading = false;
     end
 
-    -- 11/10/24 Set any key to be able to close menu
-
     Library:GiveSignal(InputService.InputBegan:Connect(function(Input, Processed)
         if type(Library.ToggleKeybind) == 'table' and Library.ToggleKeybind.Type == 'KeyPicker' then
             if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Library.ToggleKeybind.Value then
@@ -3678,13 +3695,7 @@ function Library:CreateWindow(...)
 
     return Window;
 end;
-    
-    if Config.AutoShow then task.spawn(Library.Toggle) end
-    
-    Window.Holder = Outer
-    
-    return Window
-    
+
 local function OnPlayerChange()
     local PlayerList = GetPlayersString();
 
