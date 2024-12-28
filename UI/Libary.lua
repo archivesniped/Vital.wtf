@@ -44,6 +44,8 @@ local Library = {
     OpenedFrames = {};
     DependencyBoxes = {};
 
+    Keybind = Enum.KeyCode.LeftControl,
+
     Signals = {};
     ScreenGui = ScreenGui;
 };
@@ -3187,9 +3189,9 @@ function Library:CreateWindow(...)
             Position = UDim2.new(0, 8 - 1, 0, 8 - 1);
             Size = UDim2.new(0.5, -12 + 2, 1, -8 + 1);
             CanvasSize = UDim2.new(0, 0, 0, 0);
-            BottomImage = '';
-            TopImage = '';
-            ScrollBarThickness = 0;
+            ScrollBarThickness = 2;
+            ScrollBarImageColor3 = Library.AccentColor;
+            ScrollingDirection = Enum.ScrollingDirection.Y;
             ZIndex = 2;
             Parent = TabFrame;
         });
@@ -3200,12 +3202,15 @@ function Library:CreateWindow(...)
             Position = UDim2.new(0.5, 4 + 1, 0, 8 - 1);
             Size = UDim2.new(0.5, -12 + 2, 1, -8 + 1);
             CanvasSize = UDim2.new(0, 0, 0, 0);
-            BottomImage = '';
-            TopImage = '';
-            ScrollBarThickness = 0;
+            ScrollBarThickness = 2;
+            ScrollBarImageColor3 = Library.AccentColor;
+            ScrollingDirection = Enum.ScrollingDirection.Y;
             ZIndex = 2;
             Parent = TabFrame;
         });
+
+        Library:AddToRegistry(LeftSide, { ScrollBarImageColor3 = 'AccentColor'; });
+        Library:AddToRegistry(RightSide, { ScrollBarImageColor3 = 'AccentColor'; });
     
         Library:Create('UIListLayout', {
             Padding = UDim.new(0, 8);
@@ -3225,7 +3230,7 @@ function Library:CreateWindow(...)
     
         for _, Side in next, { LeftSide, RightSide } do
             Side:WaitForChild('UIListLayout'):GetPropertyChangedSignal('AbsoluteContentSize'):Connect(function()
-                Side.CanvasSize = UDim2.fromOffset(0, Side.UIListLayout.AbsoluteContentSize.Y);
+                Side.CanvasSize = UDim2.fromOffset(0, Side.UIListLayout.AbsoluteContentSize.Y + 8 - 1);
             end);
         end;
         -- ZGlzY29yZC5nZy9mZW50d2luIHwgaHR0cHM6Ly9kcmFuay5jYw==
@@ -3684,7 +3689,7 @@ function Library:CreateWindow(...)
             if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Library.ToggleKeybind.Value then
                 task.spawn(Library.Toggle)
             end
-        elseif Input.KeyCode == Enum.KeyCode.RightControl or (Input.KeyCode == Enum.KeyCode.RightShift and (not Processed)) then
+        elseif Input.KeyCode == Library.Keybind and not Processed then
             task.spawn(Library.Toggle)
         end
     end))
