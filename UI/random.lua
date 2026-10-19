@@ -1,2 +1,2350 @@
--- This file was obfuscated using Lunar Obfuscator v1.0
-return(function(...)local w={"QcdJHWnuYsw==";"04WS><E^T&h&Z4aC";"0*Z\"";"0?$/b:&^i";"0(M\"ZeuL6A","0+$rmF4A`Y8&TN^","0dXgI.E^EHFE^TSH4A91X","Q6gffZq==";"Qxgdf2VPT","04RK\\`fe^fW";"QWVJfx5PCZnYMxI==";"04AEI#E>","0`2\\$P","0<Ss\\YZ=KsUZih5L_*X","0Y%4Q`@#Y3`J`k0uC@;r3RK:ERVR;dHhp[\'APm1l&=NNp9%#lg\"riL^1A-YN<@CJW*qIj$0B]D3*5/%lE@oZOW:>/?I)rBR<t>";"QrV2csV0BPOxh6ndgG7q=","0&$(:=","0_YE[jo@>\"","0R\'/94EST,R$4`0XFUD8\'2=rR_\\?","0Aem";"0(I","0+$rTnR+","QugB9m7ouxgUNWjid";"Qxn3RWOF=","QcdJv6I==";"QWGUC8w==","QDCCg8fw=","04\'UlZR;h";"QbGURrpdhx5fK2vX5ZKF=","04GUt=&@1";"0%AeShE2J>V&@n,XA(Y","QZVPfWVI=";"0&[>?#&d!","Q6heHxCHIjKfhuYjM8Ki=","Q2VJM2GdzxcF=";"QAAeP2vjxj7efrdFNWi==";"0+$1*Ro@>^";"QijP6rGu8Gp0b6CBN","QZGfxup3EPp2+8cwQGi==";"0lE#lJ_^).(>_6NDg9k";"0Aee","0A(!iH_B-0";"QxceNWOF=";"QF7QIGq==","Q8dig8nxbiQ6IicHTjq==";"QsnT06hPxx52BuI==","QxOPd6q==";"Q7gYpPAPoPCY/xnuv2I==";"0\\-LD)%0P";"0QH/rQ*aRsU%3KX&N#Z9=Ff=ei([","QZnUMxVJo","Qs70hidjl7GJC7h7OZQw=","0","0gO0a#_21KG_O-i>oS";"Qr7pQGV7=";"0feg\'XlaA"}local function b(b)return w[b+29782]end for b,A in ipairs({{1;56},{1,44},{45;56}})do while A[1]<A[2]do w[A[1]],w[A[2]],A[1],A[2]=w[A[2]],w[A[1]],A[1]+1,A[2]-1 end end do local b=type local A=string.char local V={F=8,J=61;["5"]=7,V=6,["0"]=57;w=0;s=30,["9"]=56;c=23;["/"]=58;D=62;B=44,y=3;q=32,["3"]=49,S=42;d=53;["+"]=10,k=60,g=54,N=50;P=13;e=9;m=12,L=63,j=21;X=1;["6"]=24;C=52;v=39,I=48,E=2,T=40;n=38;p=36,["8"]=26;K=4,u=17;i=16,f=33;r=18,["4"]=59,Y=37;U=5;W=27,["1"]=43,R=47;x=25,t=31;G=22,H=41,a=11;z=34,M=46,["7"]=20;A=19;b=14,o=45,O=55,Q=51;l=15,["2"]=29;Z=28,h=35}local i=w local q=table.insert local M=string.sub local S={["."]=62,["9"]=68,N=69;["*"]=78,c=43,["7"]=50;["1"]=84,Y=24;[")"]=57,["`"]=33;W=7,R=35,f=36,D=52,["<"]=16;["6"]=67;["#"]=79,k=72;["2"]=19;Q=74;b=47;d=27,["8"]=1,G=63,E=32;["\""]=66,B=71;J=61;e=65,p=2;["3"]=0,g=15,["&"]=31;[":"]=6,["]"]=48;[","]=17,h=5,F=60;m=56,["0"]=29;Z=25,["="]=11,s=3,["!"]=26;["^"]=51,t=14;["%"]=28,r=40;u=13;o=22;U=8,C=64,["5"]=73,q=12;[";"]=41;L=46;["["]=81,H=77,l=38,X=10,O=44,K=75,P=70,["$"]=55,_=23,["@"]=80,["?"]=21,["4"]=37;["("]=18;A=34;T=53,I=54,["-"]=83,S=42;["/"]=82;V=49;n=59,j=76,["+"]=30,M=58;["\\"]=20;i=45,a=4,["\'"]=9,[">"]=39}local c=table.concat local I=math.floor local v=string.len for w=1,#i,1 do local l=i[w]if b(l)=="string"then local b=M(l,1,1)if b=="Q"then l=M(l,2)local b=v(l)local S={}local O=1 local B=0 local W=0 while O<=b do local w=M(l,O,O)local i=V[w]if i then B=B+i*(64^((3-W)))W=W+1 if W==4 then W=0 local w=I(B/65536)local b=I((B%65536)/256)local V=B%256 q(S,A(w,b,V))B=0 end elseif w=="="then q(S,A(I(B/65536)))if O>=b or M(l,O+1,O+1)~="="then q(S,A(I((B%65536)/256)))end break end O=O+1 end i[w]=c(S)elseif b=="0"then l=M(l,2)local b=v(l)local V={}local O=1 while O<=b do local w=(b-O)+1 local i=w>=5 and 5 or w local c=0 local v=i>1 for w=0,4,1 do local b if w<i then local A=M(l,O+w,O+w)b=S[A]if not b then v=false break end else b=84 end c=c*85+b end if v then local w=I(c/16777216)%256 local b=I(c/65536)%256 local M=I(c/256)%256 local S=c%256 if i==5 then q(V,A(w,b,M,S))elseif i==4 then q(V,A(w,b,M))elseif i==3 then q(V,A(w,b))elseif i==2 then q(V,A(w))end end O=O+i end i[w]=c(V)end end end end local A={jb=function(w,A,V,i)return b(V+20598)end,L=function(w,A,V,i)return b(i-9885)end,f=function(w,A,V,i)return b(A-44087)end}return(function(c,M,q,I,S,w,i,B,T,h,l,Z,f,v,O,j,W,D,V,x)local U={f=function(w,A,V,i)return b(A+33274)end,e=function(w,A,V,i)return b(w+24350)end;y=function(w,A,V,i)return b(i+55811)end}B,D,x,h,W,f,O,V,T,v,l,j,Z=0,function(w,A)local M={h=function(w,A,V,i)return b(w+58987)end,g=function(w,A,V,i)return b(i+1344)end;C=function(w,A,V,i)return b(i-43889)end}local i=W(A)local q=function(q,M,S,c,I,v,l)local O={f=function(w,A,V,i)return b(i+24050)end;kb=function(w,A,V,i)return b(V+53868)end;ib=function(w,A,V,i)return b(A-28778)end}return V(w,{q,M;S,c;I,v;l},A,i)end return q end,function(w,A)local M={p=function(w,A,V,i)return b(A-22468)end;T=function(w,A,V,i)return b(i-8236)end,d=function(w,A,V,i)return b(i+16761)end}local i=W(A)local q=function(...)local q={E=function(w,A,V,i)return b(i+2944)end,J=function(w,A,V,i)return b(i+48155)end;D=function(w,A,V,i)return b(w-13914)end}return V(w,{...},A,i)end return q end,function(w,A)local M={db=function(w,A,V,i)return b(A+52498)end;O=function(w,A,V,i)return b(A-36765)end,x=function(w,A,V,i)return b(w-18265)end}local i=W(A)local q=function()local q={lb=function(w,A,V,i)return b(V+58572)end,y=function(w,A,V,i)return b(i+7669)end;Q=function(w,A,V,i)return b(w+32114)end}return V(w,{},A,i)end return q end,function(w)local A={k=function(w,A,V,i)return b(V-54042)end,A=function(w,A,V,i)return b(V-9401)end;G=function(w,A,V,i)return b(w-33211)end}for b=1,#w,1 do l[w[b]]=l[w[b]]+1 end if q then local V=q(true)local i=S(V)i[A.G(3474,4116,2773,3033)],i[A.G(3442,2840,2730,4358)],i[A.A(-19543,-20553,-20371,-21072)]=w,j,function()local w={q=function(w,A,V,i)return b(V+16431)end,A=function(w,A,V,i)return b(V-48953)end;J=function(w,A,V,i)return b(w+21931)end}return-2760282 end return V else return M({},{[A.G(3442,4405,3795,2749)]=j,[A.A(-20011,-20762,-20336,-19715)]=w;[A.A(-20784,-20219,-20371,-19434)]=function()local w={j=function(w,A,V,i)return b(w+53459)end;I=function(w,A,V,i)return b(A+22278)end;u=function(w,A,V,i)return b(i-44515)end}return-2760282 end})end end,function(w)local A={H=function(w,A,V,i)return b(w+20940)end,M=function(w,A,V,i)return b(V+11524)end;B=function(w,A,V,i)return b(V-22503)end}l[w]=l[w]-1 if 0==l[w]then l[w],v[w]=nil,nil end end,function()local w={fb=function(w,A,V,i)return b(A+47854)end;D=function(w,A,V,i)return b(A+61016)end,gb=function(w,A,V,i)return b(i+16925)end}B=1+B l[B]=1 return B end,function(A,V,q,M)local bo={mb=function(w,A,V,i)return b(i-9181)end,cb=function(w,A,V,i)return b(w+47264)end,E=function(w,A,V,i)return b(V+60974)end}local S,J,I,X,p,u,B,K,E,l,r,L,g,o,e,m,a,j,R,W,F,N,C,k,P,s,Y,d,x,G,z,Q,H,U,wo,y,n,t while A do if A>7685336 then if A<11867865 then if 9942725>A then if 8749370>A then if 8383762>A then if A<8061392 then S=bo.E(-90902,-90497,-90725,-91730)A=w[S]I=bo.cb(-76995,-77308,-76197,-76474)S=A(I)S,A={},w[bo.cb(-77010,-77612,-76638,-77524)]elseif A<8148443 then F,E=1,A P=z[F]F=8456266>=12077246 C=P==F A,wo=C and 11181866 or 3506439,C elseif A<8253003 then I,W,j=V[1],bo.mb(-20974,-19995,-20501,-20586),26626106874273 S=v[q[1]]l=v[q[2]]B=l(W,j)A=S[B]l,S=A,{}A,j=nil,{}B=A A=-1697509546 W=A A=S==j A=A and 11113305 or 4849128 else A=v[q[1]]l,s,y=B,0,255 U=A(s,y)A=11231022 I[l]=U l=nil end else if A<8485218 then s=1 S=U==s A=S and 11138224 or 9034002 elseif 8520581>A then v[l]=J A=H H=v[l]A=H and 6316785 or 8800978 elseif A<8619751 then y,A=14301333<610451,13447609 v[l]=y else l=v[q[3]]B=77 I=l*B l=257 S=I%l v[q[3]]=S B=1 l=v[q[3]]I=l~=B A=I and 15979809 or 8697762 end end else if 9169493>A then if A<8827179 then A=15940837 elseif A<8902919 then A=13447609 elseif 8993230>A then A=13274013 else s=2 S=U==s A=S and 6759422 or 10350366 end else if A<9394985 then p={}Y=O()U=nil v[Y]=p p=O()N=T(12013416,{Y,L,X;j})g=bo.mb(-21054,-21066,-20910,-20555)k=O()v[p]=N B,R,t,N=nil,bo.cb(-77001,-77961,-77516,-77508),{},{}v[k]=N d,x,u,G=nil,nil,bo.mb(-19779,-19547,-20204,-20551),nil N=w[g]z=v[k]r={[R]=z;[u]=G}g=N(t,r)v[l]=g N=D(12184154,{k;Y,n,L;X,p})B=nil k=f(k)X=f(X)j=f(j)n=f(n)v[W]=N Y=f(Y)Y=17357156734186 U=v[l]L=f(L)X=bo.E(-90034,-91344,-90749,-91225)d=v[W]n=bo.E(-90031,-89896,-90709,-90447)p=f(p)j=nil p=16451251758023 L=d(X,p)x=U[L]L=v[l]X=v[W]p=X(n,Y)n,U=bo.mb(-20508,-19709,-20141,-20563),bo.mb(-20436,-19598,-19684,-20566)d=L[p]U=x[U]L=T(8209498,{l,W})U=U(x,d,L)d=bo.mb(-21146,-19872,-19916,-20576)U=w[d]L=v[l]Y=30527050143339 X=v[W]p=X(n,Y)d=L[p]x=U~=d A=x and 16172601 or 10521357 elseif A<9608573 then d=6 y=U==d A=y and 8541741 or 13447609 else N=#U Y,t=1,1 p=B(Y,N)Y=d(U,p)N=v[n]p=nil g=Y-t k=x(g)N[Y]=k g=0 k=#U N=k==g A,Y=N and 9304985 or 9732161,nil end end end else if 11125764>A then if A<10475375 then if 10230272>A then A,d=15824279,4209643 d=nil elseif 10328810>A then A,S=13982802>12202812,{}v[q[1]]=A A=w[bo.E(-91608,-90867,-90745,-90106)]elseif A<10389880 then y=3 s=U==y A=s and 947847 or 15703003 else X,L,U={},{},nil d=L==X A=d and 10153289 or 15824279 end else if A<10553429 then U,L,k=bo.E(-90778,-90148,-90701,-90805),bo.E(-90090,-91552,-90755,-91124),16187933263109 x=w[U]N=bo.cb(-77043,-76044,-77514,-77054)d=w[L]p=v[l]n=v[W]Y=n(N,k)X=p[Y]p=bo.cb(-77040,-76296,-76074,-77887)p=d[p]L={p(d,X)}d={}U=x(i(L))x=U()U={}x=U==d A=x and 425061 or 5114413 elseif 10693653>A then H=bo.mb(-20376,-19833,-20553,-20585)J=w[H]y,H=L,bo.E(-90437,-90660,-90751,-91459)k=J[H]J=k(I,y)k=v[q[6]]H=k()A=7057367 N=J+H y=nil Y=N+U N=256 n=Y%N J,U=1,n k=U+J N=W[k]Y=s..N s=Y elseif A<10957554 then x=O()j,A=bo.E(-91226,-89916,-90740,-90318),7114237<=13171134 v[l]=A X=Z(10307255,{x})W=w[j]j=bo.cb(-76993,-76329,-77231,-77352)B=W[j]W=O()v[W]=B B=T(8035396,{})L=bo.cb(-77026,-77837,-77331,-76132)j=O()v[j]=B B,U=3606900>=6521963,A v[x]=B d=w[L]L=d(X)B,A=L,L and 3915743 or 6998448 else S=v[q[1]]U,s=bo.cb(-77014,-76169,-76585,-76161),15443924297162 j=v[q[2]]x=j(U,s)A=S[x]j=A j,A=nil,4849128 end end else if A>11529478 then if A<11556092 then S,A={l},w[bo.cb(-77022,-76942,-77211,-76290)]elseif 11692542>A then Q=A wo=v[l]a,A=wo,wo and 8087389 or 5780020 else A=16060113 end else if 11160045>A then s=v[l]y=14943013<=182268 S=s==y A=S and 12610903 or 8853380 elseif A<11206444 then F=2 P=z[F]F=v[G]C=P==F A,wo=3506439,C elseif A<11372377 then B,U=j+B,not x l=W>=B l=U and l U=B>=W U=x and U l=U or l U=8296509 A=l and U l=2162448 A=A or l else l=v[q[2]]A=7335277 B=v[q[3]]I=l==B S=I end end end end else if A<14738130 then if A>13182837 then if 14237653>A then if A<13237728 then A=12710806>=10548823 A=A and 180744 or 1233401 elseif 13360811>A then y=15493687>=11823917 A=y and 3423557 or 6255925 elseif 13756628>A then U,A=nil,13164230 else j=f(j)L=f(L)W=f(W)d=f(d)L=O()W=O()p=nil k=f(k)l=f(l)l,n=nil,nil x=f(x)B=nil B,d=nil,bo.cb(-77030,-76033,-76984,-76462)X=f(X)x,N=bo.mb(-19834,-20455,-20042,-20587),nil v[W]=l U,Y=nil,nil X=O()l=O()v[l]=B U,A=bo.mb(-19725,-20036,-20760,-20587),1396612 j=w[x]x=bo.E(-90113,-89770,-90744,-90001)B=j[x]j=O()v[j]=B n=bo.E(-91063,-90800,-90700,-90454)x=w[U]U=bo.E(-91496,-90384,-90717,-90151)B=x[U]U=w[d]d=bo.cb(-76994,-76862,-76527,-77093)x=U[d]U={}Y,d=256,0 v[L]=d d,N=2,Y v[X]=d p=w[n]Y,n=1,bo.E(-90876,-90497,-90712,-90554)d=p[n]n=O()p={}v[n]=p k=Y Y,p=0,1 g=k<Y Y=p-k end else if A<14454351 then v[q[5]]=S A,I=3122315,nil elseif 14555172>A then y=Z(16576596,{})S=bo.cb(-77023,-78039,-76457,-76095)A=w[S]W,s=bo.mb(-19597,-21323,-19757,-20547),bo.mb(-20390,-20071,-21577,-20581)I=v[q[4]]B=w[W]U=w[s]s={U(y)}U,x=2,{i(s)}j=x[U]W=B(j)B=bo.cb(-76997,-76439,-76243,-78002)l=I(W,B)I={l()}S=A(i(I))l=v[q[5]]A,I=l and 6918338 or 14409659,S S=l else S,A,W=bo.mb(-21548,-20879,-20676,-20576),I,nil w[S]=A I,l,S=nil,nil,1030532<=12996818 U,x=S,nil U,j,A,S,B=nil,nil,w[bo.E(-91498,-90882,-90716,-91018)],nil,nil s=S S,s={},nil end end else if 12397528>A then if A<11948749 then U=913243>12635672 U,A=nil,10429394 elseif A<11996654 then A,y,U={},1,255 v[q[2]]=A S=v[q[3]]j,W=35184372088832,S S=l%j v[q[4]]=S s=bo.cb(-77005,-76996,-77083,-77355)x=l%U U=2 j=x+U v[q[5]]=j L=1 x=#I X,U=L,bo.mb(-20798,-21184,-21465,-20560)B[l]=U L,U=0,20 p=X<L L,A,d=y-X,7057367,x elseif A<12098785 then I=v[q[1]]S=#I I=0 A=S==I A=A and 205144 or 12714982 else I,l=V[1],V[2]A=v[q[1]]B=A A=B[l]A=A and 513214 or 11979892 end else if A<12662942 then A=8853380 elseif A<12755175 then l=v[q[1]]I=#l A=w[bo.mb(-20073,-21335,-19561,-20573)]B=v[q[1]]l=B[I]B=v[q[1]]S,W={l},nil B[I]=W elseif A<12979799 then l=O()B,A=6,bo.E(-91188,-90902,-90719,-90564)v[l]=A S,A,I,W=0,13164230,V,B B=1 j=B B=0 x=B>j B=S-j else B=B+j S,U=W>=B,not x S=U and S U=B>=W U=x and U S=U or S U=15915244 A=S and U S=10801804 A=A or S end end end else if A>15928040 then if 16229600>A then if 15960323>A then H=h(6177412,{j})A=w[bo.cb(-77029,-76889,-76546,-76202)]o={H()}S={i(o)}elseif A<16019961 then B=32 l=v[q[3]]I=l%B x=v[q[3]]d=2 j=x-I A,B,x=12714982,13,32 W=j/x l=B-W j=v[q[4]]s=v[q[2]]y=d^l n=256 U=s/y x=j(U)j=4294967296 W=x%j x=2 j=x^I B=W/j j=v[q[4]]y=1 s=B%y y=4294967296 U=s*y y=256 x=j(U)j=v[q[4]]U=j(B)X=256 W=x+U s,x=65536,65536 j=W%x U=W-j x=U/s I=nil s=j%y L=j%X d=j-L L,B,W,j=256,nil,nil,nil y=d/L L=256 d=x%L p=x%n X=x-p x,p,l=nil,256,nil L=X/p U={s,y,d;L}v[q[1]]=U elseif 16116357>A then s=12840409~=2990908 A=s and 11818124 or 4361921 else L,d={},{}U=d==L x=nil A=U and 11917606 or 10429394 end else if A<16407688 then n,A=bo.cb(-77028,-76862,-76416,-76582),5369782 p=w[n]L=p elseif A<16552686 then s,A=15828444<471661,13447609 v[l]=s else l,B,S=bo.E(-91701,-90096,-90708,-91379),13013069,10603825 I=l^B A=S-I I,S=A,bo.E(-90777,-91307,-90713,-89949)A=S/I S={A}A=w[bo.mb(-21224,-21221,-21280,-20575)]end end else if A>15515195 then if A<15763641 then y=4 s=U==y A=s and 16528776 or 6588114 elseif 15869761>A then A,S=w[bo.mb(-20712,-21435,-21225,-20597)],{}else S,U=0,B A=U==S A=A and 455181 or 8471015 end else if A<14945079 then y,U=s,nil B[l]=y W,s,A,x=nil,nil,11545224,nil elseif 15046932>A then S,A={},w[bo.cb(-77027,-77590,-76943,-76393)]elseif A<15198026 then H=K+H J,t=H<=o,not g J=t and J t=H>=o t=g and t J=t or J t=15327387 A=J and t J=5664696 A=A or J else J=O()z,R=100,bo.cb(-77032,-76548,-76247,-77354)v[J]=H r=w[R]e,R=0,bo.cb(-77007,-76715,-76696,-76958)t=r[R]R=1 r=t(R,z)t=O()u=255 v[t]=r z=0 r=v[d]C,Q=bo.E(-91016,-91696,-90702,-89756),2 R=r(z,u)u=1 r=O()v[r]=R R=v[d]G=v[t]a=1 z=R(u,G)R=O()v[R]=z u=v[d]G=u(a,Q)u=1 z=G==u u=O()Q=bo.mb(-19973,-20972,-20555,-20592)v[u]=z G=bo.cb(-76997,-76556,-77570,-77951)E=w[C]m=10000 P=v[d]F={P(e,m)}C=E(i(F))z,E=bo.E(-90693,-90676,-90721,-91033),bo.E(-90943,-91682,-90747,-90883)wo=C..E a=Q..wo z,Q=N[z],bo.E(-91569,-91554,-90736,-91227)z=z(N,G,a)G=O()wo=h(5319874,{d,J,L;W,l,k;u;G,t,R,r;X})v[G]=z a=w[Q]Q={a(wo)}a=v[u]z={i(Q)}A=a and 11566960 or 3070666 end end end end end else if 3691878>A then if A<1832827 then if A<916560 then if 440121>A then if A<139761 then A=885274 elseif 192944>A then A=13201444 elseif 315102>A then l=v[q[2]]B=201 I=l*B l=15915375398809 S=I+l I=35184372088832 A=S%I v[q[2]]=A A=8697762 else x=909247058 x,A=nil,5114413 end else if A<484197 then s=bo.cb(-77009,-77433,-76058,-77074)S=v[l]A=S~=s A=A and 1895302 or 3594066 elseif A<528175 then S,A={l},w[bo.cb(-77019,-77719,-77697,-77075)]elseif 714205>A then A,S=w[bo.cb(-77004,-77645,-76714,-77692)],{}else A=13447609 end end else if A>1492203 then if 1638135>A then v[l]=Q F=v[R]A,e=wo,1 P=F+e C=z[P]E=p+C C=256 wo=E%C A=2212445 P=v[r]p=wo C=n+P P=256 E=C%P n=E elseif 1729414>A then I,B=bo.mb(-19716,-21487,-19660,-20570),0 A=w[I]l=v[q[8]]I=A(l,B)A=4221773 else t,K=bo.mb(-21605,-20165,-20544,-20593),bo.E(-90348,-90178,-90702,-91124)H=w[K]g=w[t]K=H(g)A,H=4741811,bo.cb(-77017,-76893,-77794,-77069)w[H]=K end else if A<1038055 then y=v[l]d=12687921>=6865471 s=y==d A=s and 3958406 or 3335608 elseif A<1180832 then A=n A,L=p and 5369782 or 16286600,p elseif A<1315006 then A=3594066 else Y,t=Y+k,not g p=N>=Y p=t and p t=N<=Y t=g and t p=t or p t=3789690 A=p and t p=1926204 A=A or p end end end else if A<2954110 then if A>2249642 then if A<2437459 then A=5345798 elseif A<2618713 then A=13505865>6242720 A=A and 4091586 or 543137 elseif A<2743451 then g=bo.mb(-21492,-21042,-19817,-20572)H=w[g]g,A=bo.E(-90520,-90522,-90748,-91699),4741811 w[g]=H else k,A=bo.mb(-19715,-19830,-20546,-20545),1128263 N=w[k]k=bo.E(-91028,-90960,-90738,-90315)Y=N[k]p=Y end else if 1910753>A then A=13201444 elseif A<2044326 then A=9732161 elseif A<2187446 then A=v[q[10]]l=v[q[11]]I[A]=l A=v[q[12]]l={A(I)}A,S=w[bo.mb(-20787,-21103,-20033,-20568)],{i(l)}else G=f(G)u=f(u)R=f(R)r=f(r)A,z=15068666,nil t=f(t)J=f(J)end end else if A<3464998 then if A<3096490 then E=v[l]Q,wo=E,A A=E and 4437758 or 1587795 elseif 3228961>A then A=v[q[7]]A=A and 1688476 or 4221773 elseif 3379582>A then A=16060113 else A=13274013 end else if 3512337>A then a,A=wo,E A=5780020 elseif 3556151>A then A=13447609 else A=4152162>=6989466 v[l]=A A=13447609 end end end end else if A>5357790 then if A<6322780 then if 6200382>A then if 5517239>A then J=T(5292750,{})Y,g,A=65,bo.mb(-20522,-19898,-19725,-20547),X X=O()n=3 v[X]=L L=v[d]p=L(n,Y)n=0 L=O()v[L]=p p=0 k=bo.cb(-77026,-77201,-77211,-77417)N=w[k]k={N(J)}Y={i(k)}k=2 N=Y[k]J=bo.E(-91198,-91323,-90733,-91353)k=w[J]H=v[W]K=w[g]g=K(N)K=bo.mb(-21391,-19856,-20759,-20552)o=H(g,K)H={o()}J=k(i(H))k=O()v[k]=J J=1 H=v[L]o=H H=1 K=H H,A=0,15068666 g=K<H H=J-K elseif A<5722358 then o=v[l]J,H=o,A A=o and 4410079 or 8499422 elseif A<5978716 then A=Q v[l]=a A=2212445 else A=2588079 end else if 6239638>A then A=9371788>11052326 U=A U,A=nil,14611301 elseif 6286355>A then A=885274 else A=14065647 end end else if 6958393>A then if 6458445>A then L=3826739<=620682 d=v[l]y=d==L A=y and 98779 or 8952459 elseif 6673768>A then d=5 y=U==d A=y and 6328776 or 9484986 elseif A<6838880 then A,S=13447609,12187087~=7638253 v[l]=S else B=v[q[6]]l=B==I S,A=l,14409659 end else if 7027907>A then A=U L=bo.mb(-21604,-20682,-19730,-20587)d=w[L]L,X=bo.mb(-21275,-20753,-20177,-20562),bo.E(-91502,-89821,-90700,-89845)U=d[L]d=O()v[d]=U L=w[X]N,X,n=bo.cb(-76990,-77160,-76176,-77433),bo.mb(-20276,-21305,-19765,-20580),A U=L[X]Y=w[N]p=Y X=A A=Y and 2837555 or 1128263 elseif A<7196322 then L=X+L y,n=L<=d,not p y=n and y n=L>=d n=p and n y=n or y n=10585502 A=y and n y=14864959 A=A or y else A=S and 14499043 or 3122315 end end end else if 4589784>A then if 4156679>A then if A<3852716 then p,A=Y,1396612 t=p U[p]=t p=nil elseif A<3937074 then A=6998448 d=v[x]B=d elseif A<4024996 then A=3518236 else S,I=bo.E(-90205,-91206,-90727,-91170),bo.mb(-19741,-21497,-21333,-20593)A=w[S]S=w[I]I=bo.mb(-20745,-20582,-20510,-20593)w[I]=A I=bo.mb(-21446,-21134,-20647,-20572)w[I]=S A=2588079 I=v[q[1]]l=I()end else if 4291847>A then l=1 B=v[q[9]]A,W={},B B,I=1,A A,j=11231022,B B=0 x=j<B B=l-j elseif 4386000>A then A=3518236 elseif 4423918>A then o=p==n J,A=o,8499422 else C,A=1,1587795 E=z[C]Q=E end end else if A<5270982 then if A<4795469 then A=5345798 elseif 4981770>A then S,A,U={},123292156,{}j=A A=369772913 x=A A=S==U A=A and 6223352 or 14611301 elseif 5181814>A then l=f(l)S={}W=f(W)A,j,B=w[bo.E(-91579,-91444,-90754,-91567)],nil,nil else g,K=6,1 H=v[d]o=H(K,g)H=bo.mb(-20765,-21140,-20723,-20572)w[H]=o g=bo.E(-89908,-90676,-90727,-89973)K=w[g]g=2 H=K>g A=H and 1770352 or 2649348 end else if A<5306312 then S,B,l=10215787,10504421,bo.mb(-20229,-21009,-21185,-20571)I=l^B A=S-I I,S=A,bo.mb(-20570,-19916,-21338,-20567)A=S/I S={A}A=w[bo.cb(-77024,-77279,-76471,-77279)]elseif A<5332836 then l=v[q[1]]W,j=1,2 B=l(W,j)l=1 I=B==l S,A=I,I and 7335277 or 11513732 else H=16554172>4485082 A=H and 5249215 or 15025199 end end end end end end end A=#M return i(S)end,function(w,A)local M={f=function(w,A,V,i)return b(V-65353)end,D=function(w,A,V,i)return b(i-36812)end;W=function(w,A,V,i)return b(A+55089)end}local i=W(A)local q=function(q)local M={f=function(w,A,V,i)return b(V+32950)end;C=function(w,A,V,i)return b(w-52625)end,m=function(w,A,V,i)return b(V+51503)end}return V(w,{q},A,i)end return q end,{},{},function(w)local i={m=function(w,A,V,i)return b(w+20035)end;mb=function(w,A,V,i)return b(i+35793)end;n=function(w,A,V,i)return b(w+31919)end}local A,V=1,w[1]while V do l[V],A=l[V]-1,1+A if l[V]==0 then l[V],v[V]=nil,nil end V=w[A]end end,function(w,A)local M={L=function(w,A,V,i)return b(V-43992)end;S=function(w,A,V,i)return b(i+36088)end,R=function(w,A,V,i)return b(i+38291)end}local i=W(A)local q=function(q,M,S,c,I)local v={gb=function(w,A,V,i)return b(i+30939)end,F=function(w,A,V,i)return b(i+64358)end,f=function(w,A,V,i)return b(V+1827)end}return V(w,{q,M,S,c;I},A,i)end return q end return(x(12795369,{}))(i(I))end)(select,setmetatable,newproxy,{...},getmetatable,getfenv and getfenv()or _ENV,unpack or table[A.f(15339,14323,15001,15191)])end)(...)
+repeat task.wait() until game:IsLoaded()
+if not game:GetService("Players").LocalPlayer then
+    repeat task.wait() until game:GetService("Players").LocalPlayer
+end
+
+local Player = game:GetService("Players").LocalPlayer
+repeat task.wait() until Player.Character or Player.CharacterAdded:Wait()
+
+local Env = (getgenv and getgenv()) or _G
+if Env.CustomUtilityUnload then
+    pcall(Env.CustomUtilityUnload)
+    Env.CustomUtilityUnload = nil
+end
+
+local Services = {
+    ReplicatedStorage = game:GetService("ReplicatedStorage"),
+    UserInputService = game:GetService("UserInputService"),
+    RunService = game:GetService("RunService"),
+    Players = game:GetService("Players"),
+    Lighting = game:GetService("Lighting"),
+    Workspace = game:GetService("Workspace"),
+    Teams = game:GetService("Teams")
+}
+
+local DrawingAvailable = pcall(function()
+    local probe = Drawing.new("Text")
+    probe:Remove()
+end)
+
+local RESPAWN_WAIT_TIME = 2
+
+local Theme = {
+    Accent = Color3.fromRGB(242, 169, 59),
+    OnAccent = Color3.fromRGB(26, 19, 6),
+    Dock = Color3.fromRGB(13, 13, 15),
+    Panel = Color3.fromRGB(17, 17, 19),
+    Row = Color3.fromRGB(24, 24, 27),
+    RowHover = Color3.fromRGB(31, 31, 35),
+    Track = Color3.fromRGB(46, 46, 52),
+    Border = Color3.fromRGB(40, 40, 46),
+    Text = Color3.fromRGB(236, 236, 240),
+    Sub = Color3.fromRGB(128, 128, 140),
+    Danger = Color3.fromRGB(240, 84, 84),
+    DangerBg = Color3.fromRGB(42, 18, 20),
+    DangerHover = Color3.fromRGB(60, 24, 27)
+}
+
+local function pickFont(name, fallback)
+    local ok, font = pcall(function() return Enum.Font[name] end)
+    if ok and font then return font end
+    return fallback
+end
+
+local Fonts = {
+    Regular = pickFont("BuilderSans", Enum.Font.Gotham),
+    Medium = pickFont("BuilderSansMedium", Enum.Font.GothamMedium),
+    Bold = pickFont("BuilderSansBold", Enum.Font.GothamBold)
+}
+
+local State = {
+    Initialized = false,
+    Unloaded = false,
+    CharacterLoaded = false,
+    Combat = {
+        killAura = {
+            enabled = false, spareTeam = true, targetAll = false, range = 20, cooldown = 0.3, lastAttack = -10, hits = 0,
+            key = "T", getKey = nil,
+            hud = {enabled = false, side = "Right"}
+        }
+    },
+    Visuals = {
+        esp = {
+            enabled = false, distance = 500, xOffset = 0, yOffset = 0, showAll = false,
+            fontSize = 16, font = "Plex", showName = true, showHealth = true, rev = 0
+        }
+    },
+    Time = {enabled = false, value = 12, original = nil, connection = nil},
+    Groups = {aura = {}, esp = {}},
+    Picks = {aura = {}, esp = {}}
+}
+
+local Cleanup = {tasks = {}, running = false}
+
+function Cleanup.Add(item)
+    table.insert(Cleanup.tasks, item)
+    return item
+end
+
+function Cleanup.Run()
+    if Cleanup.running or State.Unloaded then return end
+    Cleanup.running = true
+    State.Unloaded = true
+    for i = #Cleanup.tasks, 1, -1 do
+        local item = Cleanup.tasks[i]
+        Cleanup.tasks[i] = nil
+        pcall(function()
+            if type(item) == "function" then
+                item()
+            else
+                item:Disconnect()
+            end
+        end)
+    end
+    if Env.CustomUtilityUnload == Cleanup.Run then
+        Env.CustomUtilityUnload = nil
+    end
+    Cleanup.running = false
+end
+
+local Utils = {Cache = {data = {}, timestamps = {}}}
+
+function Utils.SafeDisconnect(connection)
+    if connection then
+        pcall(function() connection:Disconnect() end)
+    end
+    return nil
+end
+
+function Utils.GetCharacterComponents(player)
+    player = player or Player
+    local char = player.Character
+    if not char or not char.Parent then return nil end
+    local humanoid = char:FindFirstChildWhichIsA("Humanoid")
+    local rootPart = char:FindFirstChild("HumanoidRootPart")
+    if humanoid and rootPart and rootPart.Parent then
+        return {character = char, humanoid = humanoid, rootPart = rootPart}
+    end
+    return nil
+end
+
+function Utils.WaitForCharacterComponents(player, timeout)
+    player = player or Player
+    timeout = timeout or 10
+    local startTime = tick()
+    while tick() - startTime < timeout do
+        local components = Utils.GetCharacterComponents(player)
+        if components then return components end
+        task.wait(0.1)
+    end
+    return nil
+end
+
+function Utils.CachedFind(parent, childName, duration)
+    duration = duration or 60
+    local key = tostring(parent) .. "_" .. childName
+    local now = tick()
+    if Utils.Cache.data[key] and (now - (Utils.Cache.timestamps[key] or 0)) < duration then
+        local cached = Utils.Cache.data[key]
+        if cached and cached.Parent then return cached end
+    end
+    local child = parent:FindFirstChild(childName)
+    if child then
+        Utils.Cache.data[key] = child
+        Utils.Cache.timestamps[key] = now
+    end
+    return child
+end
+
+function Utils.InputMatches(key, input)
+    if type(key) ~= "string" or key == "" or key == "None" then return false end
+    if key == "MouseLeft" then return input.UserInputType == Enum.UserInputType.MouseButton1 end
+    if key == "MouseRight" then return input.UserInputType == Enum.UserInputType.MouseButton2 end
+    return input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode.Name == key
+end
+
+local GuiFactory = {}
+
+function GuiFactory.New(name, order)
+    local gui = Instance.new("ScreenGui")
+    gui.Name = name
+    gui.ResetOnSpawn = false
+    gui.IgnoreGuiInset = true
+    gui.DisplayOrder = order
+    gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    if syn and syn.protect_gui then pcall(syn.protect_gui, gui) end
+    local placed = false
+    if gethui then
+        placed = pcall(function() gui.Parent = gethui() end) and gui.Parent ~= nil
+    end
+    if not placed then
+        placed = pcall(function() gui.Parent = game:GetService("CoreGui") end) and gui.Parent ~= nil
+    end
+    if not placed then gui.Parent = Player:WaitForChild("PlayerGui") end
+    return gui
+end
+
+local Groups = {NONE = "~none"}
+
+function Groups.Key(player)
+    local team = player.Team
+    return team and team.Name or Groups.NONE
+end
+
+function Groups.Changed()
+    State.Visuals.esp.rev = State.Visuals.esp.rev + 1
+end
+
+function Groups.Tag(player)
+    local team = player.Team
+    return team and team.Name or nil
+end
+
+function Groups.Selected(kind, player)
+    local pick = State.Picks[kind][player.Name]
+    if pick ~= nil then return pick end
+    return State.Groups[kind][Groups.Key(player)] == true
+end
+
+function Groups.AuraAllowed(player)
+    local ka = State.Combat.killAura
+    if ka.spareTeam and Player.Team and player.Team == Player.Team then return false end
+    if ka.targetAll then return true end
+    return Groups.Selected("aura", player)
+end
+
+function Groups.EspAllowed(player)
+    if State.Visuals.esp.showAll then return true end
+    return Groups.Selected("esp", player)
+end
+
+function Groups.Leader(group)
+    local team = group.team
+    if not team then return nil end
+    for _, p in ipairs(Services.Players:GetPlayers()) do
+        if p.Team == team then return p end
+    end
+    return nil
+end
+
+function Groups.List()
+    local teams = Services.Teams:GetTeams()
+    table.sort(teams, function(a, b) return a.Name < b.Name end)
+    local out = {}
+    for _, team in ipairs(teams) do
+        out[#out + 1] = {key = team.Name, name = team.Name, color = team.TeamColor.Color, team = team}
+    end
+    out[#out + 1] = {key = Groups.NONE, name = "No Team", color = Theme.Sub}
+    return out
+end
+
+function Groups.Members(group)
+    local names = {}
+    for _, p in ipairs(Services.Players:GetPlayers()) do
+        if p.Team == group.team then names[#names + 1] = p.Name end
+    end
+    table.sort(names)
+    return names
+end
+
+local Combat = {}
+
+local combatPartsCache = setmetatable({}, {__mode = "k"})
+
+local function combatGetParts(player)
+    local char = player.Character
+    if not char or not char.Parent then return nil end
+    local cached = combatPartsCache[player]
+    if cached and cached.char == char and cached.humanoid.Parent and cached.root.Parent then
+        return cached
+    end
+    local humanoid = char:FindFirstChildWhichIsA("Humanoid")
+    local root = char:FindFirstChild("HumanoidRootPart")
+    if not humanoid or not root then
+        combatPartsCache[player] = nil
+        return nil
+    end
+    cached = {char = char, humanoid = humanoid, root = root}
+    combatPartsCache[player] = cached
+    return cached
+end
+
+function Combat.GetKey()
+    local ka = State.Combat.killAura
+    local key = ka.getKey and ka.getKey() or nil
+    if type(key) ~= "string" or key == "" then key = ka.key end
+    return key
+end
+
+function Combat.MatchesKey(input)
+    return Utils.InputMatches(Combat.GetKey(), input)
+end
+
+function Combat.FindNearestTarget()
+    local ka = State.Combat.killAura
+    local myChar = Player.Character
+    local myRoot = myChar and myChar:FindFirstChild("HumanoidRootPart")
+    if not myRoot then return nil end
+    local myPos = myRoot.Position
+    local rangeSq = ka.range * ka.range
+    local nearest, shortestSq = nil, rangeSq + 1
+    for _, player in ipairs(Services.Players:GetPlayers()) do
+        if player ~= Player and Groups.AuraAllowed(player) then
+            local parts = combatGetParts(player)
+            if parts and parts.humanoid.Health > 0 then
+                local offset = parts.root.Position - myPos
+                local distSq = offset.X * offset.X + offset.Y * offset.Y + offset.Z * offset.Z
+                if distSq <= rangeSq and distSq < shortestSq then
+                    shortestSq = distSq
+                    nearest = {
+                        player = player, character = parts.char, humanoid = parts.humanoid,
+                        rootPart = parts.root, distance = math.sqrt(distSq)
+                    }
+                end
+            end
+        end
+    end
+    return nearest
+end
+
+function Combat.GetCooldownRemaining()
+    local ka = State.Combat.killAura
+    return math.max(0, ka.cooldown - (os.clock() - ka.lastAttack))
+end
+
+function Combat.TryAttack()
+    local ka = State.Combat.killAura
+    if State.Unloaded or not ka.enabled or not State.CharacterLoaded then return false end
+    if Combat.GetCooldownRemaining() > 0 then return false end
+
+    local target = Combat.FindNearestTarget()
+    if not target then
+        if Combat.OnMiss then Combat.OnMiss() end
+        return false
+    end
+
+    local remote = Utils.CachedFind(Services.ReplicatedStorage, "AttackHandlerRemoteEvent")
+    if not remote then return false end
+
+    local sent = pcall(function() remote:FireServer(target.humanoid) end)
+    if not sent then pcall(function() remote:FireServer(target.player) end) end
+
+    ka.lastAttack = os.clock()
+    ka.hits = ka.hits + 1
+    if Combat.OnHit then Combat.OnHit(target) end
+    return true
+end
+
+local ESP = {}
+
+local ESP_FONTS = {UI = 0, System = 1, Plex = 2, Monospace = 3}
+local ESP_FONT_NAMES = {"UI", "System", "Plex", "Monospace"}
+local ESP_COLORS = {
+    Color3.fromRGB(80, 255, 120),
+    Color3.fromRGB(255, 235, 70),
+    Color3.fromRGB(255, 150, 45),
+    Color3.fromRGB(255, 65, 65)
+}
+local ESP_OUTLINE = Color3.fromRGB(0, 0, 0)
+local ESP_BIND_NAME = "CustomUtilityESP"
+
+local espEntries = {}
+local espRunning = false
+local espPlayerAddedConn = nil
+local espPlayerRemovingConn = nil
+
+local function espDestroyDrawing(text)
+    if text then pcall(function() text:Remove() end) end
+end
+
+local function espCreateDrawing(color)
+    local ok, text = pcall(Drawing.new, "Text")
+    if not ok or not text then return nil end
+    pcall(function()
+        text.Center = true
+        text.Outline = true
+        text.OutlineColor = ESP_OUTLINE
+        text.Transparency = 1
+        text.Color = color or ESP_COLORS[1]
+        text.Visible = false
+    end)
+    return text
+end
+
+local ESP_NAME_COLOR = Color3.fromRGB(255, 255, 255)
+
+local function espHide(entry)
+    if entry.visible then
+        entry.visible = false
+        pcall(function()
+            entry.text.Visible = false
+            entry.hpText.Visible = false
+        end)
+    end
+end
+
+local function espBucket(pct)
+    if pct > 0.75 then return 1 end
+    if pct > 0.5 then return 2 end
+    if pct > 0.25 then return 3 end
+    return 4
+end
+
+local function espResolve(entry)
+    local char = entry.player.Character
+    local hum = char and char:FindFirstChildWhichIsA("Humanoid")
+    local root = char and (char:FindFirstChild("HumanoidRootPart") or char.PrimaryPart)
+    if char and hum and root then
+        entry.char, entry.humanoid, entry.root = char, hum, root
+        entry.hp = -1
+        entry.topOffset = nil
+        entry.nextMeasure = 0
+    else
+        entry.char, entry.humanoid, entry.root = nil, nil, nil
+    end
+end
+
+local ESP_WORLD_PAD = 0.6
+
+local function espMeasure(entry)
+    local char, root = entry.char, entry.root
+    local rootY = root.Position.Y
+    local topY = rootY + root.Size.Y / 2
+    local colliders = char:FindFirstChild("RagdollColliderParts")
+    for _, part in ipairs(char:GetDescendants()) do
+        if part:IsA("BasePart") and part.Transparency < 1 and not (colliders and part:IsDescendantOf(colliders)) then
+            local cf = part.CFrame
+            local _, _, _, _, _, _, r10, r11, r12 = cf:GetComponents()
+            local size = part.Size
+            local top = cf.Position.Y + (math.abs(r10) * size.X + math.abs(r11) * size.Y + math.abs(r12) * size.Z) / 2
+            if top > topY then topY = top end
+        end
+    end
+    local offset = topY - rootY
+    if entry.topOffset then offset = entry.topOffset * 0.6 + offset * 0.4 end
+    entry.topOffset = offset
+end
+
+local function espUpdateEntry(entry, cam, origin, now, cfg)
+    local char, hum, root = entry.char, entry.humanoid, entry.root
+    if not char or not hum or not root or char.Parent == nil or entry.player.Character ~= char then
+        espHide(entry)
+        if now >= entry.nextResolve then
+            entry.nextResolve = now + 0.25
+            espResolve(entry)
+        end
+        return
+    end
+
+    if not Groups.EspAllowed(entry.player) then espHide(entry) return end
+
+    local hp = hum.Health
+    if hp <= 0 then espHide(entry) return end
+
+    local pos = root.Position
+    local dist = (pos - origin).Magnitude
+    if dist > cfg.distance then espHide(entry) return end
+
+    if not entry.topOffset or now >= entry.nextMeasure then
+        entry.nextMeasure = now + 1 + math.random() * 0.4
+        espMeasure(entry)
+    end
+
+    local anchor = Vector3.new(pos.X, pos.Y + entry.topOffset + ESP_WORLD_PAD, pos.Z)
+    local screen, onScreen = cam:WorldToViewportPoint(anchor)
+    if not onScreen then espHide(entry) return end
+
+    local nameText, hpText = entry.text, entry.hpText
+
+    if entry.font ~= cfg.font then
+        entry.font = cfg.font
+        local f = ESP_FONTS[cfg.font] or 0
+        nameText.Font = f
+        hpText.Font = f
+    end
+    if entry.size ~= cfg.fontSize then
+        entry.size = cfg.fontSize
+        nameText.Size = cfg.fontSize
+        hpText.Size = cfg.fontSize
+    end
+
+    local maxHp = hum.MaxHealth
+    local hpInt = math.floor(hp + 0.5)
+    local maxInt = math.floor(maxHp + 0.5)
+    if entry.hp ~= hpInt or entry.maxHp ~= maxInt then
+        entry.hp, entry.maxHp = hpInt, maxInt
+        hpText.Text = string.format("%d / %d HP", hpInt, maxInt)
+    end
+
+    local bucket = espBucket(maxHp > 0 and hp / maxHp or 0)
+    if entry.bucket ~= bucket then
+        entry.bucket = bucket
+        hpText.Color = ESP_COLORS[bucket]
+    end
+
+    local nameOn, hpOn = cfg.showName, cfg.showHealth
+    local lineH = cfg.fontSize + 3
+    local rows = (nameOn and 1 or 0) + (hpOn and 1 or 0)
+    local x = screen.X + cfg.xOffset
+    local y = screen.Y + cfg.yOffset - rows * lineH
+    if nameOn then
+        nameText.Position = Vector2.new(x, y)
+        y = y + lineH
+    end
+    if hpOn then
+        hpText.Position = Vector2.new(x, y)
+    end
+    nameText.Visible = nameOn
+    hpText.Visible = hpOn
+    entry.visible = true
+end
+
+local function espReplaceDrawing(entry)
+    local newName = espCreateDrawing(ESP_NAME_COLOR)
+    local newHp = espCreateDrawing()
+    if not newName or not newHp then
+        espDestroyDrawing(newName)
+        espDestroyDrawing(newHp)
+        return
+    end
+    espDestroyDrawing(entry.text)
+    espDestroyDrawing(entry.hpText)
+    pcall(function() newName.Text = entry.name end)
+    entry.text, entry.hpText = newName, newHp
+    entry.visible, entry.font, entry.size, entry.bucket, entry.hp = false, nil, nil, 0, -1
+end
+
+local function espStep()
+    local cfg = State.Visuals.esp
+    local cam = Services.Workspace.CurrentCamera
+    if not cam then return end
+
+    local origin = cam.CFrame.Position
+    local myChar = Player.Character
+    local myRoot = myChar and myChar:FindFirstChild("HumanoidRootPart")
+    if myRoot then origin = myRoot.Position end
+
+    local now = os.clock()
+    for _, entry in pairs(espEntries) do
+        local ok = pcall(espUpdateEntry, entry, cam, origin, now, cfg)
+        if ok then
+            entry.errors = 0
+        else
+            entry.errors = entry.errors + 1
+            if entry.errors >= 3 then
+                entry.errors = 0
+                espReplaceDrawing(entry)
+            end
+        end
+    end
+end
+
+function ESP.AddPlayer(player)
+    if player == Player or espEntries[player] then return end
+    local text = espCreateDrawing(ESP_NAME_COLOR)
+    if not text then return end
+    local hpText = espCreateDrawing()
+    if not hpText then
+        espDestroyDrawing(text)
+        return
+    end
+    pcall(function() text.Text = player.Name end)
+    local entry = {
+        player = player, text = text, hpText = hpText, name = player.Name,
+        visible = false, bucket = 0, errors = 0, nextResolve = 0, nextMeasure = 0, height = 0,
+        hp = -1, maxHp = -1, dist = -1, rev = -1
+    }
+    entry.conns = {
+        player.CharacterAdded:Connect(function()
+            entry.char, entry.humanoid, entry.root = nil, nil, nil
+            entry.nextResolve = 0
+        end),
+        player.CharacterRemoving:Connect(function()
+            entry.char, entry.humanoid, entry.root = nil, nil, nil
+            espHide(entry)
+        end)
+    }
+    espEntries[player] = entry
+    espResolve(entry)
+end
+
+function ESP.RemovePlayer(player)
+    local entry = espEntries[player]
+    if not entry then return end
+    espEntries[player] = nil
+    for _, conn in ipairs(entry.conns) do Utils.SafeDisconnect(conn) end
+    espDestroyDrawing(entry.text)
+    espDestroyDrawing(entry.hpText)
+end
+
+function ESP.Start()
+    if espRunning or State.Unloaded or not DrawingAvailable then return end
+    espRunning = true
+    for _, p in ipairs(Services.Players:GetPlayers()) do ESP.AddPlayer(p) end
+    espPlayerAddedConn = Services.Players.PlayerAdded:Connect(ESP.AddPlayer)
+    espPlayerRemovingConn = Services.Players.PlayerRemoving:Connect(ESP.RemovePlayer)
+    Services.RunService:BindToRenderStep(ESP_BIND_NAME, Enum.RenderPriority.Camera.Value + 1, espStep)
+end
+
+function ESP.Stop()
+    if not espRunning then return end
+    espRunning = false
+    pcall(function() Services.RunService:UnbindFromRenderStep(ESP_BIND_NAME) end)
+    espPlayerAddedConn = Utils.SafeDisconnect(espPlayerAddedConn)
+    espPlayerRemovingConn = Utils.SafeDisconnect(espPlayerRemovingConn)
+    for player in pairs(espEntries) do ESP.RemovePlayer(player) end
+end
+
+local TweenService = game:GetService("TweenService")
+
+local HUD = {
+    gui = nil, box = nil, stroke = nil, conn = nil,
+    dot = nil, title = nil, status = nil, name = nil, info = nil, hpFill = nil, cdFill = nil,
+    side = "Right", nextScan = 0, lastStep = 0, target = nil
+}
+
+local HUD_ACCENT = Theme.Border
+local HUD_BG = Theme.Dock
+local HUD_TRACK = Theme.Track
+local HUD_TEXT = Theme.Text
+local HUD_SUB = Theme.Sub
+local HUD_OFF = Color3.fromRGB(255, 65, 65)
+local HUD_HIT_FLASH = Color3.fromRGB(255, 255, 255)
+local HUD_MISS_FLASH = Color3.fromRGB(255, 65, 65)
+local HUD_COOLDOWN = Color3.fromRGB(255, 150, 45)
+
+local function hudNew(class, props, parent)
+    local inst = Instance.new(class)
+    for k, v in pairs(props) do inst[k] = v end
+    inst.Parent = parent
+    return inst
+end
+
+local function hudSet(inst, prop, value)
+    if inst[prop] ~= value then inst[prop] = value end
+end
+
+local function hudLabel(parent, props)
+    props.BackgroundTransparency = 1
+    props.BorderSizePixel = 0
+    props.TextTruncate = Enum.TextTruncate.AtEnd
+    return hudNew("TextLabel", props, parent)
+end
+
+function HUD.ApplySide()
+    local box = HUD.box
+    if not box then return end
+    if HUD.side == "Left" then
+        box.AnchorPoint = Vector2.new(0, 0.5)
+        box.Position = UDim2.new(0, 16, 0.5, 0)
+    else
+        box.AnchorPoint = Vector2.new(1, 0.5)
+        box.Position = UDim2.new(1, -16, 0.5, 0)
+    end
+end
+
+function HUD.SetSide(side)
+    HUD.side = (side == "Left") and "Left" or "Right"
+    HUD.ApplySide()
+end
+
+function HUD.Create()
+    if HUD.gui then return end
+
+    local gui = GuiFactory.New("CustomUtilityHUD", 50)
+
+    local box = hudNew("Frame", {
+        Name = "Box", Size = UDim2.fromOffset(204, 92),
+        BackgroundColor3 = HUD_BG, BackgroundTransparency = 0.12, BorderSizePixel = 0
+    }, gui)
+    hudNew("UICorner", {CornerRadius = UDim.new(0, 10)}, box)
+    local stroke = hudNew("UIStroke", {
+        Color = HUD_ACCENT, Thickness = 1, Transparency = 0.45,
+        ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    }, box)
+    hudNew("UIPadding", {
+        PaddingLeft = UDim.new(0, 12), PaddingRight = UDim.new(0, 12),
+        PaddingTop = UDim.new(0, 9), PaddingBottom = UDim.new(0, 10)
+    }, box)
+
+    local dot = hudNew("Frame", {
+        Size = UDim2.fromOffset(8, 8), Position = UDim2.fromOffset(0, 4),
+        BackgroundColor3 = HUD_SUB, BorderSizePixel = 0
+    }, box)
+    hudNew("UICorner", {CornerRadius = UDim.new(1, 0)}, dot)
+
+    local title = hudLabel(box, {
+        Position = UDim2.fromOffset(14, 0), Size = UDim2.fromOffset(110, 16),
+        Font = Fonts.Bold, TextSize = 11, TextColor3 = HUD_SUB,
+        TextXAlignment = Enum.TextXAlignment.Left, Text = "KILL AURA"
+    })
+    local status = hudLabel(box, {
+        Position = UDim2.fromOffset(0, 0), Size = UDim2.new(1, 0, 0, 16),
+        Font = Fonts.Bold, TextSize = 11, TextColor3 = HUD_SUB,
+        TextXAlignment = Enum.TextXAlignment.Right, Text = ""
+    })
+    local name = hudLabel(box, {
+        Position = UDim2.fromOffset(0, 22), Size = UDim2.new(1, 0, 0, 18),
+        Font = Fonts.Bold, TextSize = 15, TextColor3 = HUD_TEXT,
+        TextXAlignment = Enum.TextXAlignment.Left, Text = "No target"
+    })
+    local info = hudLabel(box, {
+        Position = UDim2.fromOffset(0, 41), Size = UDim2.new(1, 0, 0, 13),
+        Font = Fonts.Regular, TextSize = 11, TextColor3 = HUD_SUB,
+        TextXAlignment = Enum.TextXAlignment.Left, Text = ""
+    })
+
+    local function makeBar(y)
+        local track = hudNew("Frame", {
+            Position = UDim2.fromOffset(0, y), Size = UDim2.new(1, 0, 0, 4),
+            BackgroundColor3 = HUD_TRACK, BorderSizePixel = 0
+        }, box)
+        hudNew("UICorner", {CornerRadius = UDim.new(1, 0)}, track)
+        local fill = hudNew("Frame", {
+            Size = UDim2.new(0, 0, 1, 0), BackgroundColor3 = HUD_SUB, BorderSizePixel = 0
+        }, track)
+        hudNew("UICorner", {CornerRadius = UDim.new(1, 0)}, fill)
+        return fill
+    end
+
+    HUD.gui, HUD.box, HUD.stroke = gui, box, stroke
+    HUD.dot, HUD.title, HUD.status, HUD.name, HUD.info = dot, title, status, name, info
+    HUD.hpFill = makeBar(60)
+    HUD.cdFill = makeBar(68)
+    HUD.nextScan = 0
+    HUD.ApplySide()
+end
+
+function HUD.Destroy()
+    if HUD.gui then pcall(function() HUD.gui:Destroy() end) end
+    HUD.gui, HUD.box, HUD.stroke = nil, nil, nil
+    HUD.dot, HUD.title, HUD.status, HUD.name, HUD.info, HUD.hpFill, HUD.cdFill = nil, nil, nil, nil, nil, nil, nil
+    HUD.target = nil
+end
+
+function HUD.Flash(color)
+    local stroke = HUD.stroke
+    if not stroke then return end
+    stroke.Color = color
+    stroke.Transparency = 0
+    TweenService:Create(stroke, TweenInfo.new(0.35, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+        Color = HUD_ACCENT, Transparency = 0.45
+    }):Play()
+end
+
+local function hudStep()
+    if not HUD.gui then return end
+    local now = os.clock()
+    if now - HUD.lastStep < 0.033 then return end
+    HUD.lastStep = now
+    local ka = State.Combat.killAura
+
+    if now >= HUD.nextScan then
+        HUD.nextScan = now + 0.15
+        if ka.enabled and State.CharacterLoaded then
+            HUD.target = Combat.FindNearestTarget()
+        else
+            HUD.target = nil
+        end
+    end
+
+    local target = HUD.target
+    if target and (target.character.Parent == nil or target.humanoid.Health <= 0) then
+        target = nil
+        HUD.target = nil
+    end
+
+    local remaining = Combat.GetCooldownRemaining()
+
+    local statusText, statusColor
+    if not ka.enabled then
+        statusText, statusColor = "OFF", HUD_OFF
+    elseif remaining > 0 then
+        statusText, statusColor = string.format("%.2fs", remaining), HUD_COOLDOWN
+    elseif target then
+        statusText, statusColor = "READY", ESP_COLORS[1]
+    else
+        statusText, statusColor = "IDLE", HUD_SUB
+    end
+
+    local nameText, nameColor, infoText, hpPct
+    if not ka.enabled then
+        nameText, nameColor, infoText, hpPct = "Disabled", HUD_SUB, "Kill Aura is turned off", 0
+    elseif target then
+        local hum = target.humanoid
+        nameText, nameColor = target.player.Name, HUD_TEXT
+        infoText = string.format("%d / %d HP | %d studs",
+            math.floor(hum.Health + 0.5), math.floor(hum.MaxHealth + 0.5), math.floor(target.distance + 0.5))
+        hpPct = hum.MaxHealth > 0 and math.clamp(hum.Health / hum.MaxHealth, 0, 1) or 0
+    else
+        nameText, nameColor = "No target", HUD_SUB
+        infoText, hpPct = string.format("Nothing within %d studs", math.floor(ka.range)), 0
+    end
+
+    local progress = ka.cooldown > 0 and (1 - remaining / ka.cooldown) or 1
+
+    hudSet(HUD.title, "Text", "KILL AURA | " .. tostring(Combat.GetKey()))
+    hudSet(HUD.dot, "BackgroundColor3", statusColor)
+    hudSet(HUD.status, "Text", statusText)
+    hudSet(HUD.status, "TextColor3", statusColor)
+    hudSet(HUD.name, "Text", nameText)
+    hudSet(HUD.name, "TextColor3", nameColor)
+    hudSet(HUD.info, "Text", infoText)
+    hudSet(HUD.hpFill, "Size", UDim2.new(hpPct, 0, 1, 0))
+    hudSet(HUD.hpFill, "BackgroundColor3", ESP_COLORS[espBucket(hpPct)])
+    hudSet(HUD.cdFill, "Size", UDim2.new(ka.enabled and progress or 0, 0, 1, 0))
+    hudSet(HUD.cdFill, "BackgroundColor3", remaining > 0 and HUD_COOLDOWN or ESP_COLORS[1])
+end
+
+function HUD.SetEnabled(on)
+    if on then
+        HUD.Create()
+        if not HUD.conn then
+            HUD.conn = Services.RunService.Heartbeat:Connect(function() pcall(hudStep) end)
+        end
+    else
+        HUD.conn = Utils.SafeDisconnect(HUD.conn)
+        HUD.Destroy()
+    end
+end
+
+Combat.OnHit = function() HUD.Flash(HUD_HIT_FLASH) end
+Combat.OnMiss = function() HUD.Flash(HUD_MISS_FLASH) end
+
+local TimeOfDay = {}
+
+function TimeOfDay.Apply()
+    local t = State.Time
+    if not t.enabled then return end
+    local lighting = Services.Lighting
+    if math.abs(lighting.ClockTime - t.value) > 0.001 then
+        lighting.ClockTime = t.value
+    end
+end
+
+function TimeOfDay.Enable()
+    local t = State.Time
+    if t.enabled then return end
+    t.original = Services.Lighting.ClockTime
+    t.enabled = true
+    TimeOfDay.Apply()
+    t.connection = Services.Lighting:GetPropertyChangedSignal("ClockTime"):Connect(TimeOfDay.Apply)
+end
+
+function TimeOfDay.Disable()
+    local t = State.Time
+    t.enabled = false
+    t.connection = Utils.SafeDisconnect(t.connection)
+    if t.original then
+        pcall(function() Services.Lighting.ClockTime = t.original end)
+        t.original = nil
+    end
+end
+
+function TimeOfDay.SetValue(value)
+    State.Time.value = value
+    TimeOfDay.Apply()
+end
+
+local Stamina = {conn = nil, enabled = false}
+
+function Stamina.Step()
+    if State.Unloaded or not State.CharacterLoaded then return end
+    local char = Player.Character
+    if not char then return end
+    local max = char:GetAttribute("StaminaMax") or char:GetAttribute("MaxStamina") or 100
+    if char:GetAttribute("Stamina") ~= max then
+        pcall(function() char:SetAttribute("Stamina", max) end)
+    end
+end
+
+function Stamina.SetEnabled(on)
+    Stamina.enabled = on
+    Stamina.conn = Utils.SafeDisconnect(Stamina.conn)
+    if on then
+        Stamina.conn = Services.RunService.Heartbeat:Connect(function() pcall(Stamina.Step) end)
+    end
+end
+
+local RespawnHandler = {generation = 0}
+
+function RespawnHandler.OnCharacterAdded()
+    RespawnHandler.generation = RespawnHandler.generation + 1
+    local generation = RespawnHandler.generation
+    State.CharacterLoaded = false
+    Utils.Cache.data = {}
+    Utils.Cache.timestamps = {}
+    local components = Utils.WaitForCharacterComponents(Player, 10)
+    if not components or State.Unloaded then return end
+    task.wait(RESPAWN_WAIT_TIME)
+    if State.Unloaded or generation ~= RespawnHandler.generation then return end
+    State.CharacterLoaded = true
+end
+
+function RespawnHandler.Setup()
+    Cleanup.Add(Player.CharacterAdded:Connect(RespawnHandler.OnCharacterAdded))
+    if Player.Character then
+        task.spawn(RespawnHandler.OnCharacterAdded)
+    end
+end
+
+local Library = {
+    Flags = {}, Categories = {}, Current = nil, Visible = true,
+    Gui = nil, Shell = nil, ShellScale = nil, Dock = nil, Panel = nil, PanelScale = nil,
+    Title = nil, Subtitle = nil, Hint = nil, Toasts = nil,
+    Drag = nil, Listening = nil, LastBind = -10, MenuKey = nil, PanicKey = nil
+}
+
+local DOCK_W = 70
+local PANEL_W = 348
+local SHELL_H = 500
+local SHELL_GAP = 10
+
+local Config = {
+    folder = "CustomUtility", file = "CustomUtility/Settings.json",
+    ready = false, pending = false, disabled = false
+}
+
+function Config.CanUse()
+    return type(writefile) == "function" and type(readfile) == "function" and type(isfile) == "function"
+end
+
+function Config.Collect()
+    local data = {}
+    for flag, entry in pairs(Library.Flags) do
+        local ok, value = pcall(entry.get)
+        if ok and value ~= nil then data[flag] = value end
+    end
+    return data
+end
+
+function Config.Save(force)
+    if not Config.ready or Config.disabled or not Config.CanUse() then return false end
+    if State.Unloaded and not force then return false end
+    return pcall(function()
+        if type(isfolder) == "function" and type(makefolder) == "function" and not isfolder(Config.folder) then
+            makefolder(Config.folder)
+        end
+        writefile(Config.file, game:GetService("HttpService"):JSONEncode(Config.Collect()))
+    end)
+end
+
+function Config.MarkDirty()
+    if not Config.ready or Config.pending or Config.disabled or State.Unloaded then return end
+    Config.pending = true
+    task.delay(1, function()
+        Config.pending = false
+        Config.Save()
+    end)
+end
+
+function Config.Load()
+    if not Config.CanUse() then return false end
+    local ok, data = pcall(function()
+        if not isfile(Config.file) then return nil end
+        return game:GetService("HttpService"):JSONDecode(readfile(Config.file))
+    end)
+    if not ok or type(data) ~= "table" then return false end
+    for flag, value in pairs(data) do
+        local entry = Library.Flags[flag]
+        if entry then pcall(entry.set, value) end
+    end
+    return true
+end
+
+function Config.Reset()
+    Config.disabled = true
+    pcall(function()
+        if type(isfile) == "function" and type(delfile) == "function" and isfile(Config.file) then
+            delfile(Config.file)
+        end
+    end)
+end
+
+function Library.Register(flag, getter, setter)
+    Library.Flags[flag] = {get = getter, set = setter}
+end
+
+function Library.Changed()
+    Config.MarkDirty()
+end
+
+local function uiNew(class, props, parent)
+    local inst = Instance.new(class)
+    for key, value in pairs(props) do inst[key] = value end
+    if parent then inst.Parent = parent end
+    return inst
+end
+
+local function uiCorner(parent, radius)
+    return uiNew("UICorner", {CornerRadius = UDim.new(0, radius)}, parent)
+end
+
+local function uiStroke(parent, color, transparency, thickness)
+    return uiNew("UIStroke", {
+        Color = color, Transparency = transparency or 0, Thickness = thickness or 1,
+        ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    }, parent)
+end
+
+local function uiPadding(parent, top, right, bottom, left)
+    return uiNew("UIPadding", {
+        PaddingTop = UDim.new(0, top), PaddingRight = UDim.new(0, right),
+        PaddingBottom = UDim.new(0, bottom), PaddingLeft = UDim.new(0, left)
+    }, parent)
+end
+
+local function uiList(parent, padding, extra)
+    local props = {SortOrder = Enum.SortOrder.LayoutOrder, Padding = UDim.new(0, padding or 0)}
+    if extra then
+        for key, value in pairs(extra) do props[key] = value end
+    end
+    return uiNew("UIListLayout", props, parent)
+end
+
+local function tween(inst, duration, props)
+    if State.Unloaded then return end
+    local ok, built = pcall(function()
+        return TweenService:Create(inst, TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), props)
+    end)
+    if ok and built then built:Play() end
+end
+
+local function paint(inst, props, animate)
+    if animate then
+        tween(inst, 0.12, props)
+    else
+        for key, value in pairs(props) do inst[key] = value end
+    end
+end
+
+local function iconBuilder(root)
+    local parts = {}
+    local api = {}
+
+    function api.fill(x, y, w, h, round, rotation, color)
+        local frame = uiNew("Frame", {
+            AnchorPoint = Vector2.new(0.5, 0.5), Position = UDim2.new(0.5, x, 0.5, y),
+            Size = UDim2.fromOffset(w, h), BackgroundColor3 = color or Theme.Sub, BorderSizePixel = 0,
+            Rotation = rotation or 0
+        }, root)
+        uiCorner(frame, round or 0)
+        if not color then parts[#parts + 1] = {inst = frame, kind = "fill"} end
+        return frame
+    end
+
+    function api.ring(x, y, w, h, thickness, round)
+        local frame = uiNew("Frame", {
+            AnchorPoint = Vector2.new(0.5, 0.5), Position = UDim2.new(0.5, x, 0.5, y),
+            Size = UDim2.fromOffset(w, h), BackgroundTransparency = 1, BorderSizePixel = 0
+        }, root)
+        uiCorner(frame, round or math.floor(math.min(w, h) / 2))
+        parts[#parts + 1] = {inst = uiStroke(frame, Theme.Sub, 0, thickness), kind = "stroke"}
+        return frame
+    end
+
+    function api.color(value)
+        for _, part in ipairs(parts) do
+            if part.kind == "fill" then
+                part.inst.BackgroundColor3 = value
+            else
+                part.inst.Color = value
+            end
+        end
+    end
+
+    return api
+end
+
+local Icons = {}
+
+function Icons.Combat(b)
+    b.ring(0, 0, 13, 13, 2)
+    b.fill(0, 0, 4, 4, 2)
+    b.fill(0, -11, 2, 7, 1)
+    b.fill(0, 11, 2, 7, 1)
+    b.fill(-11, 0, 7, 2, 1)
+    b.fill(11, 0, 7, 2, 1)
+end
+
+function Icons.Visuals(b)
+    b.ring(0, 0, 19, 10, 2, 5)
+    b.fill(0, 0, 7, 7, 4)
+end
+
+function Icons.Misc(b)
+    b.fill(0, 0, 10, 10, 5)
+    for i = 0, 7 do
+        local angle = i * 45
+        local rad = math.rad(angle)
+        b.fill(math.cos(rad) * 11.5, math.sin(rad) * 11.5, 2, 5, 1, angle + 90)
+    end
+end
+
+function Icons.Settings(b)
+    b.ring(0, 0, 11, 11, 3)
+    for i = 0, 7 do
+        local angle = i * 45
+        local rad = math.rad(angle)
+        b.fill(math.cos(rad) * 10.5, math.sin(rad) * 10.5, 4, 5, 1, angle + 90)
+    end
+end
+
+function Icons.Groups(b)
+    b.fill(-5, -6, 8, 8, 4)
+    b.fill(-5, 5, 14, 7, 3)
+    b.fill(7, -4, 6, 6, 3)
+    b.fill(7, 5, 10, 6, 3)
+end
+
+function Icons.Kill(b)
+    for k = 0, 13 do
+        local angle = -50 + (280 * k / 13)
+        local rad = math.rad(angle)
+        b.fill(math.cos(rad) * 9, math.sin(rad) * 9, 3, 5, 1, angle)
+    end
+    b.fill(0, -7, 2, 11, 1)
+end
+
+local function textBlock(parent, title, description, widthOffset)
+    local block = uiNew("Frame", {
+        BackgroundTransparency = 1, Size = UDim2.new(1, widthOffset, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y, LayoutOrder = 0
+    }, parent)
+    uiList(block, 2)
+    uiNew("TextLabel", {
+        BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 0), AutomaticSize = Enum.AutomaticSize.Y,
+        Font = Fonts.Medium, TextSize = 14, TextColor3 = Theme.Text,
+        TextXAlignment = Enum.TextXAlignment.Left, TextWrapped = true, Text = title or "", LayoutOrder = 1
+    }, block)
+    if description and description ~= "" then
+        uiNew("TextLabel", {
+            BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 0), AutomaticSize = Enum.AutomaticSize.Y,
+            Font = Fonts.Regular, TextSize = 12, TextColor3 = Theme.Sub,
+            TextXAlignment = Enum.TextXAlignment.Left, TextWrapped = true, Text = description, LayoutOrder = 2
+        }, block)
+    end
+    return block
+end
+
+local Category = {}
+Category.__index = Category
+
+function Category:NextOrder()
+    self.Order = self.Order + 1
+    return self.Order
+end
+
+local function newRow(cat)
+    local row = uiNew("Frame", {
+        BackgroundColor3 = Theme.Row, BorderSizePixel = 0, Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y, LayoutOrder = cat:NextOrder()
+    }, cat.Scroll)
+    uiCorner(row, 8)
+    uiStroke(row, Theme.Border, 0, 1)
+    uiPadding(row, 11, 12, 11, 12)
+    row.MouseEnter:Connect(function() tween(row, 0.12, {BackgroundColor3 = Theme.RowHover}) end)
+    row.MouseLeave:Connect(function() tween(row, 0.12, {BackgroundColor3 = Theme.Row}) end)
+    return row
+end
+
+function Category:AddSection(title)
+    return uiNew("TextLabel", {
+        BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 22), Font = Fonts.Bold, TextSize = 11,
+        TextColor3 = Theme.Sub, TextXAlignment = Enum.TextXAlignment.Left, TextYAlignment = Enum.TextYAlignment.Bottom,
+        Text = string.upper(title), LayoutOrder = self:NextOrder()
+    }, self.Scroll)
+end
+
+function Category:AddParagraph(title, content)
+    local row = newRow(self)
+    textBlock(row, title, content, 0)
+    return row
+end
+
+function Category:AddToggle(flag, opts)
+    local control = {Value = opts.Default == true}
+    local row = newRow(self)
+    uiList(row, 8, {FillDirection = Enum.FillDirection.Horizontal, VerticalAlignment = Enum.VerticalAlignment.Center})
+    textBlock(row, opts.Title, opts.Description, -48)
+    local switch = uiNew("TextButton", {
+        LayoutOrder = 1, Size = UDim2.fromOffset(36, 20), BackgroundColor3 = Theme.Track,
+        BorderSizePixel = 0, AutoButtonColor = false, Text = ""
+    }, row)
+    uiCorner(switch, 10)
+    local knob = uiNew("Frame", {
+        Size = UDim2.fromOffset(14, 14), Position = UDim2.fromOffset(3, 3),
+        BackgroundColor3 = Theme.Text, BorderSizePixel = 0
+    }, switch)
+    uiCorner(knob, 7)
+
+    local function render(animate)
+        local on = control.Value
+        paint(knob, {
+            Position = on and UDim2.fromOffset(19, 3) or UDim2.fromOffset(3, 3),
+            BackgroundColor3 = on and Theme.OnAccent or Theme.Sub
+        }, animate)
+        paint(switch, {BackgroundColor3 = on and self.Color or Theme.Track}, animate)
+    end
+
+    local function set(value)
+        value = value == true
+        if value == control.Value then return end
+        control.Value = value
+        render(true)
+        if opts.Callback then pcall(opts.Callback, value) end
+        Library.Changed()
+    end
+
+    control.Set = set
+    switch.MouseButton1Click:Connect(function() set(not control.Value) end)
+    render(false)
+    if opts.Callback then pcall(opts.Callback, control.Value) end
+    if flag then Library.Register(flag, function() return control.Value end, set) end
+    return control
+end
+
+function Category:AddSlider(flag, opts)
+    local min, max = opts.Min, opts.Max
+    local rounding = opts.Rounding or 0
+    local suffix = opts.Suffix or ""
+    local control = {Value = math.clamp(opts.Default or min, min, max)}
+    local row = newRow(self)
+    uiList(row, 9)
+    local top = uiNew("Frame", {
+        BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y, LayoutOrder = 1
+    }, row)
+    uiList(top, 8, {FillDirection = Enum.FillDirection.Horizontal})
+    textBlock(top, opts.Title, opts.Description, -70)
+    local valueLabel = uiNew("TextLabel", {
+        LayoutOrder = 1, BackgroundTransparency = 1, Size = UDim2.fromOffset(62, 18),
+        Font = Fonts.Bold, TextSize = 13, TextColor3 = self.Color,
+        TextXAlignment = Enum.TextXAlignment.Right, Text = ""
+    }, top)
+    local hit = uiNew("TextButton", {
+        LayoutOrder = 2, BackgroundTransparency = 1, Text = "", AutoButtonColor = false,
+        Size = UDim2.new(1, 0, 0, 18)
+    }, row)
+    local track = uiNew("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5), Position = UDim2.new(0, 0, 0.5, 0),
+        Size = UDim2.new(1, 0, 0, 4), BackgroundColor3 = Theme.Track, BorderSizePixel = 0
+    }, hit)
+    uiCorner(track, 2)
+    local fill = uiNew("Frame", {
+        Size = UDim2.new(0, 0, 1, 0), BackgroundColor3 = self.Color, BorderSizePixel = 0
+    }, track)
+    uiCorner(fill, 2)
+    local knob = uiNew("Frame", {
+        AnchorPoint = Vector2.new(0.5, 0.5), Position = UDim2.new(0, 0, 0.5, 0),
+        Size = UDim2.fromOffset(12, 12), BackgroundColor3 = Theme.Text, BorderSizePixel = 0, ZIndex = 2
+    }, track)
+    uiCorner(knob, 6)
+
+    local function render()
+        local pct = max > min and (control.Value - min) / (max - min) or 0
+        fill.Size = UDim2.new(pct, 0, 1, 0)
+        knob.Position = UDim2.new(pct, 0, 0.5, 0)
+        if opts.Format then
+            valueLabel.Text = opts.Format(control.Value)
+        else
+            valueLabel.Text = string.format("%." .. rounding .. "f%s", control.Value, suffix)
+        end
+    end
+
+    local function set(value)
+        value = tonumber(value)
+        if not value then return end
+        local mult = 10 ^ rounding
+        value = math.floor(value * mult + 0.5) / mult
+        value = math.clamp(value, min, max)
+        if value == control.Value then return end
+        control.Value = value
+        render()
+        if opts.Callback then pcall(opts.Callback, value) end
+        Library.Changed()
+    end
+
+    control.Set = set
+    hit.InputBegan:Connect(function(input)
+        if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then
+            return
+        end
+        local function fromX(x)
+            local width = track.AbsoluteSize.X
+            if width <= 0 then return end
+            set(min + (max - min) * math.clamp((x - track.AbsolutePosition.X) / width, 0, 1))
+        end
+        fromX(input.Position.X)
+        Library.Drag = function(pos) fromX(pos.X) end
+    end)
+    render()
+    if opts.Callback then pcall(opts.Callback, control.Value) end
+    if flag then Library.Register(flag, function() return control.Value end, set) end
+    return control
+end
+
+function Category:AddSegmented(flag, opts)
+    local values = opts.Values
+    local control = {Value = opts.Default or values[1]}
+    local row = newRow(self)
+    uiList(row, 9)
+    local block = textBlock(row, opts.Title, opts.Description, 0)
+    block.LayoutOrder = 1
+    local bar = uiNew("Frame", {
+        LayoutOrder = 2, BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 28)
+    }, row)
+    local buttons = {}
+    local count = #values
+    for i, value in ipairs(values) do
+        local button = uiNew("TextButton", {
+            Position = UDim2.new((i - 1) / count, 0, 0, 0), Size = UDim2.new(1 / count, -4, 1, 0),
+            BackgroundColor3 = Theme.Track, BorderSizePixel = 0, AutoButtonColor = false,
+            Font = Fonts.Medium, TextSize = 13, TextColor3 = Theme.Sub, Text = value
+        }, bar)
+        uiCorner(button, 6)
+        buttons[value] = button
+        button.MouseButton1Click:Connect(function() control.Set(value) end)
+    end
+
+    local function render(animate)
+        for value, button in pairs(buttons) do
+            local active = value == control.Value
+            paint(button, {
+                BackgroundColor3 = active and self.Color or Theme.Track,
+                TextColor3 = active and Theme.OnAccent or Theme.Sub
+            }, animate)
+        end
+    end
+
+    function control.Set(value)
+        if not buttons[value] or value == control.Value then return end
+        control.Value = value
+        render(true)
+        if opts.Callback then pcall(opts.Callback, value) end
+        Library.Changed()
+    end
+
+    render(false)
+    if opts.Callback then pcall(opts.Callback, control.Value) end
+    if flag then Library.Register(flag, function() return control.Value end, control.Set) end
+    return control
+end
+
+function Category:AddKeybind(flag, opts)
+    local control = {Value = opts.Default or "None"}
+    local row = newRow(self)
+    uiList(row, 8, {FillDirection = Enum.FillDirection.Horizontal, VerticalAlignment = Enum.VerticalAlignment.Center})
+    textBlock(row, opts.Title, opts.Description, -96)
+    local button = uiNew("TextButton", {
+        LayoutOrder = 1, Size = UDim2.fromOffset(88, 26), BackgroundColor3 = Theme.Track, BorderSizePixel = 0,
+        AutoButtonColor = false, Font = Fonts.Bold, TextSize = 12, TextColor3 = Theme.Text,
+        TextTruncate = Enum.TextTruncate.AtEnd, Text = control.Value
+    }, row)
+    uiCorner(button, 6)
+    local stroke = uiStroke(button, self.Color, 1)
+
+    local function render()
+        button.Text = control.Value
+    end
+
+    function control.Set(value)
+        if type(value) ~= "string" or value == "" then value = "None" end
+        if value == control.Value then
+            render()
+            return
+        end
+        control.Value = value
+        render()
+        if opts.Callback then pcall(opts.Callback, value) end
+        Library.Changed()
+    end
+
+    button.MouseButton1Click:Connect(function()
+        if Library.Listening then Library.Listening.cancel() end
+        button.Text = "..."
+        stroke.Transparency = 0
+        Library.Listening = {
+            finish = function(name)
+                stroke.Transparency = 1
+                control.Set(name)
+                render()
+            end,
+            cancel = function()
+                Library.Listening = nil
+                stroke.Transparency = 1
+                render()
+            end
+        }
+    end)
+
+    render()
+    if flag then Library.Register(flag, function() return control.Value end, control.Set) end
+    return control
+end
+
+function Category:AddInput(opts)
+    local row = newRow(self)
+    uiList(row, 9)
+    local block = textBlock(row, opts.Title, opts.Description, 0)
+    block.LayoutOrder = 1
+    local line = uiNew("Frame", {
+        LayoutOrder = 2, BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 30)
+    }, row)
+    local box = uiNew("TextBox", {
+        Size = UDim2.new(1, -72, 1, 0), BackgroundColor3 = Theme.Track, BorderSizePixel = 0,
+        Font = Fonts.Medium, TextSize = 13, TextColor3 = Theme.Text, PlaceholderText = opts.Placeholder or "",
+        PlaceholderColor3 = Theme.Sub, Text = "", ClearTextOnFocus = false,
+        TextXAlignment = Enum.TextXAlignment.Left
+    }, line)
+    uiCorner(box, 6)
+    uiPadding(box, 0, 8, 0, 10)
+    local button = uiNew("TextButton", {
+        AnchorPoint = Vector2.new(1, 0), Position = UDim2.new(1, 0, 0, 0), Size = UDim2.fromOffset(64, 30),
+        BackgroundColor3 = self.Color, BorderSizePixel = 0, AutoButtonColor = false, Font = Fonts.Bold,
+        TextSize = 13, TextColor3 = Theme.OnAccent, Text = opts.ButtonText or "Add"
+    }, line)
+    uiCorner(button, 6)
+    local function submit()
+        local text = string.match(box.Text, "^%s*(.-)%s*$")
+        if not text or text == "" then return end
+        local accepted = opts.OnSubmit and opts.OnSubmit(text)
+        if accepted ~= false then box.Text = "" end
+    end
+    button.MouseButton1Click:Connect(submit)
+    box.FocusLost:Connect(function(enterPressed)
+        if enterPressed then submit() end
+    end)
+    return {Box = box, Submit = submit}
+end
+
+function Category:AddButton(opts)
+    local danger = opts.Danger == true
+    local base = danger and Theme.DangerBg or Theme.Row
+    local hover = danger and Theme.DangerHover or Theme.RowHover
+    local button = uiNew("TextButton", {
+        Size = UDim2.new(1, 0, 0, opts.Height or 36), BackgroundColor3 = base, BorderSizePixel = 0,
+        AutoButtonColor = false, Font = Fonts.Bold, TextSize = opts.TextSize or 14,
+        TextColor3 = danger and Theme.Danger or Theme.Text, Text = opts.Title, LayoutOrder = self:NextOrder()
+    }, self.Scroll)
+    uiCorner(button, 8)
+    uiStroke(button, danger and Theme.Danger or Theme.Border, danger and 0.35 or 0, 1)
+    button.MouseEnter:Connect(function() tween(button, 0.12, {BackgroundColor3 = hover}) end)
+    button.MouseLeave:Connect(function() tween(button, 0.12, {BackgroundColor3 = base}) end)
+    button.MouseButton1Click:Connect(function()
+        if opts.Callback then pcall(opts.Callback) end
+    end)
+    return button
+end
+
+function Category:AddPlayerList(flag, opts)
+    local selected = {}
+    local rows = {}
+    local destroyed = false
+    if type(opts.Initial) == "table" then
+        for name, on in pairs(opts.Initial) do
+            if on == true then selected[name] = true end
+        end
+    end
+    local onText, offText = opts.OnText or "ON", opts.OffText or "OFF"
+    local holder = newRow(self)
+    uiList(holder, 9)
+    local block = textBlock(holder, opts.Title, opts.Description, 0)
+    block.LayoutOrder = 1
+    local list = uiNew("Frame", {
+        LayoutOrder = 2, BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y
+    }, holder)
+    uiList(list, 4, {SortOrder = Enum.SortOrder.Name})
+    local empty = uiNew("TextLabel", {
+        Name = "~empty", BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 24), Font = Fonts.Regular,
+        TextSize = 13, TextColor3 = Theme.Sub, Text = "No other players in the server", Visible = false
+    }, list)
+
+    local render
+
+    local function commit()
+        if opts.Callback then pcall(opts.Callback, selected) end
+        Library.Changed()
+    end
+
+    local function makeRow(name)
+        local button = uiNew("TextButton", {
+            Name = string.lower(name), Size = UDim2.new(1, 0, 0, 32), BackgroundColor3 = Theme.Track,
+            BorderSizePixel = 0, AutoButtonColor = false, Text = ""
+        }, list)
+        uiCorner(button, 6)
+        local label = uiNew("TextLabel", {
+            BackgroundTransparency = 1, Position = UDim2.fromOffset(10, 0), Size = UDim2.new(1, -84, 1, 0),
+            Font = Fonts.Medium, TextSize = 13, TextColor3 = Theme.Text,
+            TextXAlignment = Enum.TextXAlignment.Left, TextTruncate = Enum.TextTruncate.AtEnd, Text = name
+        }, button)
+        local pill = uiNew("TextLabel", {
+            AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -6, 0.5, 0), Size = UDim2.fromOffset(58, 20),
+            Font = Fonts.Bold, TextSize = 11, BorderSizePixel = 0, BackgroundColor3 = Theme.Row,
+            TextColor3 = Theme.Sub, Text = offText
+        }, button)
+        uiCorner(pill, 5)
+        local entry = {button = button, label = label, pill = pill}
+        button.MouseButton1Click:Connect(function()
+            if selected[name] then selected[name] = nil else selected[name] = true end
+            render()
+            commit()
+        end)
+        rows[name] = entry
+        return entry
+    end
+
+    render = function()
+        local present, names = {}, {}
+        for _, p in ipairs(Services.Players:GetPlayers()) do
+            if p ~= Player then
+                present[p.Name] = true
+                names[#names + 1] = p.Name
+            end
+        end
+        for name in pairs(selected) do
+            if not present[name] then names[#names + 1] = name end
+        end
+        local keep = {}
+        for _, name in ipairs(names) do keep[name] = true end
+        for name, entry in pairs(rows) do
+            if not keep[name] then
+                entry.button:Destroy()
+                rows[name] = nil
+            end
+        end
+        for _, name in ipairs(names) do
+            local entry = rows[name] or makeRow(name)
+            local on = selected[name] == true
+            local here = present[name] == true
+            entry.pill.Text = on and onText or offText
+            entry.pill.BackgroundColor3 = on and self.Color or Theme.Row
+            entry.pill.TextColor3 = on and Theme.OnAccent or Theme.Sub
+            entry.label.Text = here and name or (name .. " (left)")
+            entry.label.TextColor3 = here and Theme.Text or Theme.Sub
+        end
+        empty.Visible = #names == 0
+    end
+
+    local function refreshLater()
+        task.delay(0.3, function()
+            if not State.Unloaded and not destroyed then render() end
+        end)
+    end
+    local addedConn = Services.Players.PlayerAdded:Connect(refreshLater)
+    local removingConn = Services.Players.PlayerRemoving:Connect(refreshLater)
+    Cleanup.Add(addedConn)
+    Cleanup.Add(removingConn)
+
+    local function set(value)
+        if type(value) ~= "table" then return end
+        selected = {}
+        for name, on in pairs(value) do
+            if on == true and type(name) == "string" then selected[name] = true end
+        end
+        render()
+        commit()
+    end
+
+    render()
+    commit()
+    if flag then
+        Library.Register(flag, function()
+            local copy = {}
+            for name in pairs(selected) do copy[name] = true end
+            return copy
+        end, set)
+    end
+    return {
+        Set = set,
+        Destroy = function()
+            destroyed = true
+            Utils.SafeDisconnect(addedConn)
+            Utils.SafeDisconnect(removingConn)
+        end
+    }
+end
+
+function Library.Notify(title, text, duration)
+    if State.Unloaded or not Library.Toasts then return end
+    local toast = uiNew("Frame", {
+        Size = UDim2.new(1, 0, 0, 48), BackgroundColor3 = Theme.Panel, BackgroundTransparency = 0,
+        BorderSizePixel = 0, LayoutOrder = math.floor(os.clock() * 100)
+    }, Library.Toasts)
+    uiCorner(toast, 10)
+    local stroke = uiStroke(toast, Theme.Border, 0)
+    local accent = uiNew("Frame", {
+        Position = UDim2.fromOffset(0, 10), Size = UDim2.fromOffset(3, 28),
+        BackgroundColor3 = Theme.Accent, BorderSizePixel = 0
+    }, toast)
+    uiCorner(accent, 2)
+    local titleLabel = uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.fromOffset(14, 7), Size = UDim2.new(1, -26, 0, 17),
+        Font = Fonts.Bold, TextSize = 13, TextColor3 = Theme.Text,
+        TextXAlignment = Enum.TextXAlignment.Left, Text = title
+    }, toast)
+    local textLabel = uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.fromOffset(14, 25), Size = UDim2.new(1, -26, 0, 16),
+        Font = Fonts.Regular, TextSize = 12, TextColor3 = Theme.Sub,
+        TextXAlignment = Enum.TextXAlignment.Left, TextTruncate = Enum.TextTruncate.AtEnd, Text = text or ""
+    }, toast)
+    task.delay(duration or 2.5, function()
+        if State.Unloaded then return end
+        tween(toast, 0.25, {BackgroundTransparency = 1})
+        tween(stroke, 0.25, {Transparency = 1})
+        tween(accent, 0.25, {BackgroundTransparency = 1})
+        tween(titleLabel, 0.25, {TextTransparency = 1})
+        tween(textLabel, 0.25, {TextTransparency = 1})
+        task.delay(0.3, function()
+            pcall(function() toast:Destroy() end)
+        end)
+    end)
+end
+
+function Library.SetScale(value)
+    if Library.ShellScale then Library.ShellScale.Scale = value end
+end
+
+function Library.SetHint(keyName)
+    if Library.Hint then Library.Hint.Text = tostring(keyName) .. " hides the menu" end
+end
+
+function Library.SetVisible(visible)
+    Library.Visible = visible
+    Library.Drag = nil
+    if not visible and Library.Listening then Library.Listening.cancel() end
+    if Library.Gui then Library.Gui.Enabled = visible end
+end
+
+function Library.GroupsChanged() end
+
+function Library.Select(cat)
+    if Library.Picker then Library.Picker.Close() end
+    if Library.Current == cat then cat = nil end
+    Library.Current = cat
+    for _, other in ipairs(Library.Categories) do
+        if not other.Action then
+            local active = other == cat
+            other.Scroll.Visible = active
+            other.SetActive(active)
+        end
+    end
+    if not cat then
+        Library.Panel.Visible = false
+        return
+    end
+    Library.Title.Text = cat.Name
+    Library.Subtitle.Text = cat.Subtitle
+    Library.Panel.Visible = true
+    Library.PanelScale.Scale = 0.97
+    tween(Library.PanelScale, 0.16, {Scale = 1})
+end
+
+function Library.BeginShellDrag(input)
+    if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then
+        return
+    end
+    local startMouse = Vector2.new(input.Position.X, input.Position.Y)
+    local startPos = Library.Shell.Position
+    Library.Drag = function(pos)
+        local delta = Vector2.new(pos.X, pos.Y) - startMouse
+        Library.Shell.Position = UDim2.new(
+            startPos.X.Scale, startPos.X.Offset + delta.X,
+            startPos.Y.Scale, startPos.Y.Offset + delta.Y
+        )
+    end
+end
+
+function Library.HandleListen(input)
+    local listening = Library.Listening
+    local name
+    if input.UserInputType == Enum.UserInputType.Keyboard then
+        if input.KeyCode.Name == "Escape" then
+            listening.cancel()
+            return
+        end
+        name = input.KeyCode.Name == "Backspace" and "None" or input.KeyCode.Name
+    elseif input.UserInputType == Enum.UserInputType.MouseButton2 then
+        name = "MouseRight"
+    else
+        return
+    end
+    Library.Listening = nil
+    Library.LastBind = os.clock()
+    listening.finish(name)
+end
+
+function Library.BuildPicker(panel)
+    local picker = {kind = "aura"}
+    local overlay = uiNew("Frame", {
+        Name = "Picker", Size = UDim2.new(1, 0, 1, 0), BackgroundColor3 = Theme.Panel, BorderSizePixel = 0,
+        Active = true, Visible = false, ZIndex = 50
+    }, panel)
+    local title = uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.fromOffset(16, 10), Size = UDim2.new(1, -32, 0, 20),
+        Font = Fonts.Bold, TextSize = 17, TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left, Text = ""
+    }, overlay)
+    local sub = uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.fromOffset(16, 31), Size = UDim2.new(1, -32, 0, 16),
+        Font = Fonts.Regular, TextSize = 12, TextColor3 = Theme.Sub, TextXAlignment = Enum.TextXAlignment.Left, Text = ""
+    }, overlay)
+    uiNew("Frame", {
+        Position = UDim2.new(0, 0, 0, 56), Size = UDim2.new(1, 0, 0, 1), BackgroundColor3 = Theme.Border, BorderSizePixel = 0
+    }, overlay)
+    local list = uiNew("ScrollingFrame", {
+        Position = UDim2.new(0, 0, 0, 57), Size = UDim2.new(1, 0, 1, -113), BackgroundTransparency = 1,
+        BorderSizePixel = 0, ScrollBarThickness = 3, ScrollBarImageColor3 = Theme.Track, CanvasSize = UDim2.new(),
+        AutomaticCanvasSize = Enum.AutomaticSize.Y, ScrollingDirection = Enum.ScrollingDirection.Y
+    }, overlay)
+    uiPadding(list, 6, 12, 6, 12)
+    uiList(list, 6)
+    local done = uiNew("TextButton", {
+        Position = UDim2.new(0, 12, 1, -48), Size = UDim2.new(1, -24, 0, 36), BackgroundColor3 = Theme.Accent,
+        BorderSizePixel = 0, AutoButtonColor = false, Font = Fonts.Bold, TextSize = 14, TextColor3 = Theme.OnAccent,
+        Text = "Done"
+    }, overlay)
+    uiCorner(done, 8)
+
+    local function paintSwitch(switch, knob, on)
+        switch.BackgroundColor3 = on and Theme.Accent or Theme.Track
+        knob.Position = on and UDim2.fromOffset(19, 3) or UDim2.fromOffset(3, 3)
+        knob.BackgroundColor3 = on and Theme.OnAccent or Theme.Sub
+    end
+
+    local function makeSection(order, text)
+        uiNew("TextLabel", {
+            LayoutOrder = order, BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 22), Font = Fonts.Bold,
+            TextSize = 11, TextColor3 = Theme.Sub, TextXAlignment = Enum.TextXAlignment.Left,
+            TextYAlignment = Enum.TextYAlignment.Bottom, Text = string.upper(text)
+        }, list)
+    end
+
+    local function makeRow(order, name, subtext, color, isOn, onClick, count)
+        local row = uiNew("TextButton", {
+            LayoutOrder = order, Size = UDim2.new(1, 0, 0, 48), BackgroundColor3 = Theme.Row, BorderSizePixel = 0,
+            AutoButtonColor = false, Text = ""
+        }, list)
+        uiCorner(row, 8)
+        uiStroke(row, Theme.Border, 0, 1)
+        local textWidth = -96
+        if count then
+            textWidth = -136
+            uiNew("TextLabel", {
+                AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -56, 0.5, 0), Size = UDim2.fromOffset(26, 18),
+                BackgroundTransparency = 1, Font = Fonts.Bold, TextSize = 13, TextColor3 = Theme.Text,
+                TextXAlignment = Enum.TextXAlignment.Right, Text = tostring(count)
+            }, row)
+            local iconRoot = uiNew("Frame", {
+                AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -86, 0.5, 0), Size = UDim2.fromOffset(16, 16),
+                BackgroundTransparency = 1
+            }, row)
+            local icon = iconBuilder(iconRoot)
+            icon.fill(0, -4, 6, 6, 3)
+            icon.fill(0, 4, 12, 6, 3)
+            icon.color(Theme.Sub)
+        end
+        local swatch = uiNew("Frame", {
+            AnchorPoint = Vector2.new(0, 0.5), Position = UDim2.new(0, 12, 0.5, 0), Size = UDim2.fromOffset(10, 10),
+            BackgroundColor3 = color, BorderSizePixel = 0
+        }, row)
+        uiCorner(swatch, 3)
+        uiNew("TextLabel", {
+            BackgroundTransparency = 1, Position = UDim2.fromOffset(32, 7), Size = UDim2.new(1, textWidth, 0, 18),
+            Font = Fonts.Bold, TextSize = 14, TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+            TextTruncate = Enum.TextTruncate.AtEnd, Text = name
+        }, row)
+        uiNew("TextLabel", {
+            BackgroundTransparency = 1, Position = UDim2.fromOffset(32, 26), Size = UDim2.new(1, textWidth, 0, 14),
+            Font = Fonts.Regular, TextSize = 11, TextColor3 = Theme.Sub, TextXAlignment = Enum.TextXAlignment.Left,
+            TextTruncate = Enum.TextTruncate.AtEnd, Text = subtext
+        }, row)
+        local switch = uiNew("Frame", {
+            AnchorPoint = Vector2.new(1, 0.5), Position = UDim2.new(1, -12, 0.5, 0), Size = UDim2.fromOffset(36, 20),
+            BackgroundColor3 = Theme.Track, BorderSizePixel = 0
+        }, row)
+        uiCorner(switch, 10)
+        local knob = uiNew("Frame", {
+            Size = UDim2.fromOffset(14, 14), Position = UDim2.fromOffset(3, 3), BackgroundColor3 = Theme.Sub,
+            BorderSizePixel = 0
+        }, switch)
+        uiCorner(knob, 7)
+        paintSwitch(switch, knob, isOn())
+        row.MouseButton1Click:Connect(function()
+            onClick()
+            Groups.Changed()
+            Library.GroupsChanged()
+            Library.Changed()
+            picker.Render()
+        end)
+    end
+
+    function picker.Render()
+        local canvas = list.CanvasPosition
+        for _, child in ipairs(list:GetChildren()) do
+            if child:IsA("GuiObject") then child:Destroy() end
+        end
+        local kind = picker.kind
+        local order = 1
+        makeSection(order, "Teams")
+        for _, group in ipairs(Groups.List()) do
+            order = order + 1
+            local count = #Groups.Members(group)
+            local sub = "Players without a team"
+            if group.team then
+                local leader = Groups.Leader(group)
+                sub = leader and ("\u{1F451} " .. leader.Name) or "Empty"
+            end
+            makeRow(order, group.name, sub, group.color,
+                function() return State.Groups[kind][group.key] == true end,
+                function()
+                    local set = State.Groups[kind]
+                    if set[group.key] then set[group.key] = nil else set[group.key] = true end
+                end, count)
+        end
+        order = order + 1
+        makeSection(order, "Players")
+        local players = {}
+        for _, p in ipairs(Services.Players:GetPlayers()) do
+            if p ~= Player then players[#players + 1] = p end
+        end
+        table.sort(players, function(a, b) return a.Name < b.Name end)
+        if #players == 0 then
+            order = order + 1
+            uiNew("TextLabel", {
+                LayoutOrder = order, BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 24), Font = Fonts.Regular,
+                TextSize = 13, TextColor3 = Theme.Sub, Text = "No other players in the server"
+            }, list)
+        end
+        for _, p in ipairs(players) do
+            order = order + 1
+            local team = p.Team
+            makeRow(order, p.Name, team and team.Name or "No Team", team and team.TeamColor.Color or Theme.Sub,
+                function() return Groups.Selected(kind, p) end,
+                function()
+                    local teamOn = State.Groups[kind][Groups.Key(p)] == true
+                    local new = not Groups.Selected(kind, p)
+                    if new == teamOn then State.Picks[kind][p.Name] = nil else State.Picks[kind][p.Name] = new end
+                end)
+        end
+        list.CanvasPosition = canvas
+    end
+
+    function picker.Open(kind)
+        picker.kind = kind
+        title.Text = kind == "aura" and "Who to hit" or "Who to show"
+        sub.Text = "Tap a team or a player to turn them on or off"
+        picker.Render()
+        overlay.Visible = true
+    end
+
+    function picker.Close()
+        overlay.Visible = false
+    end
+
+    done.MouseButton1Click:Connect(picker.Close)
+
+    local queued = false
+    local function refresh()
+        if queued then return end
+        queued = true
+        task.defer(function()
+            queued = false
+            if State.Unloaded then return end
+            if overlay.Visible then picker.Render() end
+            Library.GroupsChanged()
+            Groups.Changed()
+        end)
+    end
+
+    local watched = {}
+    local function watch(p)
+        if watched[p] then return end
+        watched[p] = p:GetPropertyChangedSignal("Team"):Connect(refresh)
+        Cleanup.Add(watched[p])
+    end
+    for _, p in ipairs(Services.Players:GetPlayers()) do watch(p) end
+    Cleanup.Add(Services.Players.PlayerAdded:Connect(function(p)
+        watch(p)
+        refresh()
+    end))
+    Cleanup.Add(Services.Players.PlayerRemoving:Connect(function(p)
+        watched[p] = Utils.SafeDisconnect(watched[p])
+    end))
+    Cleanup.Add(Services.Players.ChildRemoved:Connect(refresh))
+    Cleanup.Add(Services.Teams.ChildAdded:Connect(function() task.delay(0.15, refresh) end))
+    Cleanup.Add(Services.Teams.ChildRemoved:Connect(refresh))
+
+    Library.Picker = picker
+end
+
+function Library.Create()
+    local gui = GuiFactory.New("CustomUtilityMenu", 100)
+    Library.Gui = gui
+    Cleanup.Add(function()
+        Library.Drag, Library.Listening = nil, nil
+        pcall(function() gui:Destroy() end)
+        Library.Gui = nil
+    end)
+    Cleanup.Add(gui.AncestryChanged:Connect(function()
+        if not gui:IsDescendantOf(game) then Cleanup.Run() end
+    end))
+
+    local shell = uiNew("Frame", {
+        Name = "Shell", AnchorPoint = Vector2.new(0, 0.5), Position = UDim2.new(0, 14, 0.5, 0),
+        Size = UDim2.fromOffset(DOCK_W + SHELL_GAP + PANEL_W, SHELL_H), BackgroundTransparency = 1
+    }, gui)
+    Library.Shell = shell
+    Library.ShellScale = uiNew("UIScale", {Scale = 1}, shell)
+
+    local dock = uiNew("Frame", {
+        Name = "Dock", AnchorPoint = Vector2.new(0, 0.5), Position = UDim2.new(0, 0, 0.5, 0),
+        Size = UDim2.new(0, DOCK_W, 0, 0), AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundColor3 = Theme.Dock, BorderSizePixel = 0
+    }, shell)
+    Library.Dock = dock
+    uiCorner(dock, 14)
+    uiStroke(dock, Theme.Border, 0)
+    uiPadding(dock, 7, 7, 7, 7)
+    uiList(dock, 6, {HorizontalAlignment = Enum.HorizontalAlignment.Center})
+
+    local logo = uiNew("TextButton", {
+        Name = "Logo", Size = UDim2.new(1, 0, 0, 52), BackgroundColor3 = Theme.Row, BorderSizePixel = 0,
+        AutoButtonColor = false, Text = "", LayoutOrder = 0
+    }, dock)
+    uiCorner(logo, 10)
+    uiStroke(logo, Theme.Border, 0)
+    local mark = iconBuilder(logo)
+    mark.fill(8, -11, 4, 8, 1, 0, Theme.Accent)
+    mark.fill(-6.5, -8, 17, 4, 2, -35, Theme.Accent)
+    mark.fill(6.5, -8, 17, 4, 2, 35, Theme.Accent)
+    mark.fill(0, 3, 18, 14, 2, 0, Theme.Accent)
+    mark.fill(0, 6, 6, 8, 2, 0, Theme.Row)
+    logo.InputBegan:Connect(Library.BeginShellDrag)
+
+    local function divider(order)
+        uiNew("Frame", {
+            Size = UDim2.new(0.5, 0, 0, 1), BackgroundColor3 = Theme.Border, BorderSizePixel = 0, LayoutOrder = order
+        }, dock)
+    end
+    divider(1)
+    divider(99)
+
+    local panel = uiNew("Frame", {
+        Name = "Panel", AnchorPoint = Vector2.new(0, 0.5), Position = UDim2.new(0, DOCK_W + SHELL_GAP, 0.5, 0),
+        Size = UDim2.fromOffset(PANEL_W, SHELL_H), BackgroundColor3 = Theme.Panel,
+        BorderSizePixel = 0, Visible = false, ClipsDescendants = true
+    }, shell)
+    Library.Panel = panel
+    uiCorner(panel, 14)
+    uiStroke(panel, Theme.Border, 0)
+    Library.PanelScale = uiNew("UIScale", {Scale = 1}, panel)
+
+    local header = uiNew("TextButton", {
+        Name = "Header", Size = UDim2.new(1, 0, 0, 56), BackgroundTransparency = 1, Text = "", AutoButtonColor = false
+    }, panel)
+    header.InputBegan:Connect(Library.BeginShellDrag)
+    Library.Title = uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.fromOffset(16, 10), Size = UDim2.new(1, -64, 0, 20),
+        Font = Fonts.Bold, TextSize = 17, TextColor3 = Theme.Text,
+        TextXAlignment = Enum.TextXAlignment.Left, Text = ""
+    }, header)
+    Library.Subtitle = uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.fromOffset(16, 31), Size = UDim2.new(1, -64, 0, 16),
+        Font = Fonts.Regular, TextSize = 12, TextColor3 = Theme.Sub,
+        TextXAlignment = Enum.TextXAlignment.Left, Text = ""
+    }, header)
+    local close = uiNew("TextButton", {
+        AnchorPoint = Vector2.new(1, 0), Position = UDim2.new(1, -12, 0, 14), Size = UDim2.fromOffset(28, 28),
+        BackgroundColor3 = Theme.Row, BorderSizePixel = 0, AutoButtonColor = false, Font = Fonts.Bold,
+        TextSize = 14, TextColor3 = Theme.Sub, Text = "X"
+    }, header)
+    uiCorner(close, 8)
+    close.MouseEnter:Connect(function() tween(close, 0.12, {BackgroundColor3 = Theme.DangerBg, TextColor3 = Theme.Danger}) end)
+    close.MouseLeave:Connect(function() tween(close, 0.12, {BackgroundColor3 = Theme.Row, TextColor3 = Theme.Sub}) end)
+    close.MouseButton1Click:Connect(function() Library.Select(Library.Current) end)
+    uiNew("Frame", {
+        Position = UDim2.new(0, 0, 0, 56), Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Theme.Border, BorderSizePixel = 0
+    }, panel)
+
+    uiNew("Frame", {
+        Position = UDim2.new(0, 0, 1, -30), Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Theme.Border, BorderSizePixel = 0
+    }, panel)
+    uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.new(0, 16, 1, -29), Size = UDim2.new(0.5, -16, 0, 28),
+        Font = Fonts.Bold, TextSize = 11, TextColor3 = Theme.Sub, TextXAlignment = Enum.TextXAlignment.Left,
+        Text = "CUSTOM UTILITY"
+    }, panel)
+    Library.Hint = uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 1, -29), Size = UDim2.new(0.5, -16, 0, 28),
+        Font = Fonts.Regular, TextSize = 11, TextColor3 = Theme.Sub, TextXAlignment = Enum.TextXAlignment.Right,
+        Text = ""
+    }, panel)
+
+    Library.BuildPicker(panel)
+
+    Library.Toasts = uiNew("Frame", {
+        Name = "Toasts", AnchorPoint = Vector2.new(0.5, 1), Position = UDim2.new(0.5, 0, 1, -24),
+        Size = UDim2.new(0, 290, 0, 0), AutomaticSize = Enum.AutomaticSize.Y, BackgroundTransparency = 1
+    }, gui)
+    uiList(Library.Toasts, 6, {VerticalAlignment = Enum.VerticalAlignment.Bottom})
+
+    Cleanup.Add(Services.UserInputService.InputChanged:Connect(function(input)
+        if Library.Drag and (input.UserInputType == Enum.UserInputType.MouseMovement
+            or input.UserInputType == Enum.UserInputType.Touch) then
+            Library.Drag(input.Position)
+        end
+    end))
+    Cleanup.Add(Services.UserInputService.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            Library.Drag = nil
+        end
+    end))
+    Cleanup.Add(Services.UserInputService.InputBegan:Connect(function(input)
+        if Library.Listening then
+            Library.HandleListen(input)
+            return
+        end
+        if Services.UserInputService:GetFocusedTextBox() then return end
+        if Library.MenuKey and Utils.InputMatches(Library.MenuKey.Value, input) then
+            Library.SetVisible(not Library.Visible)
+        elseif Library.PanicKey and Utils.InputMatches(Library.PanicKey.Value, input) then
+            Cleanup.Run()
+        end
+    end))
+end
+
+function Library.AddCategory(info)
+    local color = info.Danger and Theme.Danger or Theme.Accent
+    local cat = setmetatable({
+        Name = info.Name, Subtitle = info.Subtitle or "", Color = color, Order = 0
+    }, Category)
+
+    local tile = uiNew("TextButton", {
+        Name = info.Name, Size = UDim2.new(1, 0, 0, 58), BackgroundColor3 = info.Danger and Theme.DangerBg or Theme.Row,
+        BackgroundTransparency = 1, BorderSizePixel = 0, AutoButtonColor = false, Text = "",
+        LayoutOrder = info.Danger and 100 or (10 + #Library.Categories)
+    }, Library.Dock)
+    uiCorner(tile, 10)
+    local bar = uiNew("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5), Position = UDim2.new(0, -7, 0.5, 0), Size = UDim2.fromOffset(3, 22),
+        BackgroundColor3 = color, BorderSizePixel = 0, Visible = false
+    }, tile)
+    uiCorner(bar, 2)
+    local iconRoot = uiNew("Frame", {
+        AnchorPoint = Vector2.new(0.5, 0), Position = UDim2.new(0.5, 0, 0, 6), Size = UDim2.fromOffset(30, 30),
+        BackgroundTransparency = 1
+    }, tile)
+    local icon = iconBuilder(iconRoot)
+    if Icons[info.Icon] then Icons[info.Icon](icon) end
+    local label = uiNew("TextLabel", {
+        BackgroundTransparency = 1, Position = UDim2.fromOffset(0, 38), Size = UDim2.new(1, 0, 0, 14),
+        Font = Fonts.Medium, TextSize = 11, TextColor3 = Theme.Sub, Text = info.Name
+    }, tile)
+
+    local active = false
+    local restColor = info.Danger and Theme.Danger or Theme.Sub
+    icon.color(restColor)
+    label.TextColor3 = restColor
+    cat.SetActive = function(value)
+        active = value
+        bar.Visible = value
+        icon.color(value and color or restColor)
+        tween(tile, 0.14, {BackgroundTransparency = value and 0 or 1})
+        tween(label, 0.14, {TextColor3 = value and color or restColor})
+    end
+    tile.MouseEnter:Connect(function()
+        if not active then tween(tile, 0.12, {BackgroundTransparency = 0.5}) end
+    end)
+    tile.MouseLeave:Connect(function()
+        if not active then tween(tile, 0.12, {BackgroundTransparency = 1}) end
+    end)
+    cat.Action = info.OnClick ~= nil
+    tile.MouseButton1Click:Connect(function()
+        if info.OnClick then info.OnClick(cat) else Library.Select(cat) end
+    end)
+
+    local scroll = uiNew("ScrollingFrame", {
+        Name = info.Name, Position = UDim2.new(0, 0, 0, 57), Size = UDim2.new(1, 0, 1, -88),
+        BackgroundTransparency = 1, BorderSizePixel = 0, ScrollBarThickness = 3, ScrollBarImageColor3 = Theme.Track,
+        CanvasSize = UDim2.new(), AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        ScrollingDirection = Enum.ScrollingDirection.Y, Visible = false
+    }, Library.Panel)
+    uiPadding(scroll, 6, 12, 12, 12)
+    uiList(scroll, 8)
+    cat.Scroll = scroll
+
+    table.insert(Library.Categories, cat)
+    return cat
+end
+
+local UI = {}
+
+function UI.Initialize()
+    Library.Create()
+    local ka = State.Combat.killAura
+    local esp = State.Visuals.esp
+    local summaries = {}
+
+    local labels = {aura = "Who to hit", esp = "Who to show"}
+
+    local function summarize(kind)
+        local list = Groups.List()
+        local on = 0
+        for _, group in ipairs(list) do
+            if State.Groups[kind][group.key] == true then on = on + 1 end
+        end
+        local text
+        if on == 0 then
+            text = "No teams"
+        elseif on == #list then
+            text = "All teams"
+        else
+            text = on .. " of " .. #list .. " teams"
+        end
+        local changed = 0
+        for _, p in ipairs(Services.Players:GetPlayers()) do
+            if p ~= Player and State.Picks[kind][p.Name] ~= nil then changed = changed + 1 end
+        end
+        if changed > 0 then
+            text = text .. ", " .. changed .. (changed == 1 and " player" or " players") .. " changed"
+        end
+        return text
+    end
+
+    local function addGroupsButton(cat, kind)
+        local button = cat:AddButton({
+            Title = "", Callback = function() Library.Picker.Open(kind) end
+        })
+        button.Visible = false
+        button.TextSize = 13
+        button.TextTruncate = Enum.TextTruncate.AtEnd
+        summaries[kind] = function() button.Text = labels[kind] .. ": " .. summarize(kind) end
+        summaries[kind]()
+        return button
+    end
+
+    Library.GroupsChanged = function()
+        for _, update in pairs(summaries) do update() end
+    end
+
+    local function toList(set)
+        local out = {}
+        for key, on in pairs(set) do
+            if on == true then out[#out + 1] = key end
+        end
+        table.sort(out)
+        return out
+    end
+
+    local function toSet(list)
+        local out = {}
+        if type(list) == "table" then
+            for _, key in ipairs(list) do
+                if type(key) == "string" then out[key] = true end
+            end
+        end
+        return out
+    end
+
+    local combat = Library.AddCategory({Name = "Combat", Icon = "Combat", Subtitle = "Keybind kill aura"})
+    local auraGroups
+    combat:AddToggle(nil, {
+        Title = "Kill Aura", Description = "Hit the nearest player with the keybind", Default = false,
+        Callback = function(v)
+            ka.enabled = v
+            if auraGroups then auraGroups.Visible = v and not ka.targetAll end
+            if v and not ka.targetAll then Library.Picker.Open("aura") end
+        end
+    })
+    auraGroups = addGroupsButton(combat, "aura")
+    combat:AddToggle(nil, {
+        Title = "Infinite Stamina", Description = "Keeps your stamina full", Default = false,
+        Callback = function(v) Stamina.SetEnabled(v) end
+    })
+    combat:AddToggle("AuraAll", {
+        Title = "Target All Players", Description = "Hit anyone in range (your team is still spared)", Default = false,
+        Callback = function(v)
+            ka.targetAll = v
+            if auraGroups then auraGroups.Visible = ka.enabled and not v end
+        end
+    })
+    combat:AddToggle(nil, {
+        Title = "Spare Teammates", Description = "Never hit players on your team", Default = true,
+        Callback = function(v) ka.spareTeam = v end
+    })
+    local killKey = combat:AddKeybind("KillAuraKey", {
+        Title = "Hit Keybind", Description = "Click, then press a key", Default = "T"
+    })
+    ka.getKey = function() return killKey.Value end
+    combat:AddSlider("AuraRange", {
+        Title = "Range", Description = "Max distance in studs", Min = 1, Max = 100, Default = 20, Rounding = 0,
+        Suffix = " st", Callback = function(v) ka.range = v end
+    })
+    combat:AddToggle(nil, {
+        Title = "Target HUD", Description = "Shows your current target", Default = false,
+        Callback = function(v)
+            ka.hud.enabled = v
+            HUD.SetEnabled(v)
+        end
+    })
+
+    local visuals = Library.AddCategory({Name = "Visuals", Icon = "Visuals", Subtitle = "Player ESP"})
+    if DrawingAvailable then
+        local espGroups
+        visuals:AddToggle(nil, {
+            Title = "Player ESP", Description = "Team, name, health and distance above players", Default = false,
+            Callback = function(v)
+                esp.enabled = v
+                if v then ESP.Start() else ESP.Stop() end
+                if espGroups then espGroups.Visible = v and not esp.showAll end
+                if v and not esp.showAll then Library.Picker.Open("esp") end
+            end
+        })
+        espGroups = addGroupsButton(visuals, "esp")
+        visuals:AddToggle("ESPAll", {
+            Title = "Show All Players", Description = "Show everyone, including your team", Default = false,
+            Callback = function(v)
+                esp.showAll = v
+                if espGroups then espGroups.Visible = esp.enabled and not v end
+            end
+        })
+        visuals:AddToggle("ESPName", {
+            Title = "Show Name", Default = true, Callback = function(v) esp.showName = v end
+        })
+        visuals:AddToggle("ESPHealth", {
+            Title = "Show Health", Default = true, Callback = function(v) esp.showHealth = v end
+        })
+        visuals:AddSegmented("ESPFont", {
+            Title = "Font", Description = "Text style for the ESP", Values = ESP_FONT_NAMES, Default = "Plex",
+            Callback = function(v) esp.font = v end
+        })
+        visuals:AddSlider("ESPDist", {
+            Title = "Max Distance", Min = 50, Max = 2500, Default = 500, Rounding = 0, Suffix = " st",
+            Callback = function(v) esp.distance = v end
+        })
+        visuals:AddSlider("ESPSize", {
+            Title = "Font Size", Min = 8, Max = 32, Default = 16, Rounding = 0, Suffix = "px",
+            Callback = function(v) esp.fontSize = v end
+        })
+    else
+        visuals:AddParagraph("ESP unavailable", "Your executor does not support the Drawing API.")
+    end
+
+    Library.AddCategory({
+        Name = "Day", Icon = "Misc", Subtitle = "Set the time to day",
+        OnClick = function(cat)
+            if State.Time.enabled then
+                TimeOfDay.Disable()
+                cat.SetActive(false)
+                Library.Notify("Day", "Time restored")
+            else
+                TimeOfDay.Enable()
+                cat.SetActive(true)
+                Library.Notify("Day", "Time set to day")
+            end
+        end
+    })
+
+    local settings = Library.AddCategory({Name = "Settings", Icon = "Settings", Subtitle = "Menu"})
+    Library.MenuKey = settings:AddKeybind("MenuKey", {
+        Title = "Menu Key", Description = "Show or hide the menu", Default = "RightShift",
+        Callback = function(v) Library.SetHint(v) end
+    })
+    Library.SetHint(Library.MenuKey.Value)
+    settings:AddSlider("UIScale", {
+        Title = "UI Size", Description = "Resize the whole menu", Min = 50, Max = 150, Default = 100, Rounding = 0,
+        Suffix = "%", Callback = function(v) Library.SetScale(v / 100) end
+    })
+
+    local kill = Library.AddCategory({Name = "Kill", Icon = "Kill", Subtitle = "Emergency shutdown", Danger = true})
+    kill:AddButton({
+        Title = "KILL SWITCH", Danger = true, Height = 52, TextSize = 16,
+        Callback = function() Cleanup.Run() end
+    })
+    Library.PanicKey = kill:AddKeybind("PanicKey", {
+        Title = "Panic Key", Description = "Press anywhere to kill instantly", Default = "End"
+    })
+
+    local function copyPicks(set)
+        local out = {}
+        for name, value in pairs(set) do out[name] = value end
+        return out
+    end
+
+    local function loadPicks(value)
+        local out = {}
+        if type(value) == "table" then
+            for name, pick in pairs(value) do
+                if type(name) == "string" and type(pick) == "boolean" then out[name] = pick end
+            end
+        end
+        return out
+    end
+
+    Library.Register("PicksAura", function() return copyPicks(State.Picks.aura) end, function(value)
+        State.Picks.aura = loadPicks(value)
+        Groups.Changed()
+        Library.GroupsChanged()
+    end)
+    Library.Register("PicksESP", function() return copyPicks(State.Picks.esp) end, function(value)
+        State.Picks.esp = loadPicks(value)
+        Groups.Changed()
+        Library.GroupsChanged()
+    end)
+
+    Library.Register("EnabledAura", function() return toList(State.Groups.aura) end, function(value)
+        State.Groups.aura = toSet(value)
+        Groups.Changed()
+        Library.GroupsChanged()
+    end)
+    Library.Register("EnabledESP", function() return toList(State.Groups.esp) end, function(value)
+        State.Groups.esp = toSet(value)
+        Groups.Changed()
+        Library.GroupsChanged()
+    end)
+
+    Library.Select(combat)
+    Config.Load()
+    Config.ready = true
+    Library.Notify("Custom Utility", "Loaded. Press " .. tostring(Library.MenuKey.Value) .. " to hide the menu.", 3.5)
+end
+
+local function SetupEventConnections()
+    Cleanup.Add(Services.UserInputService.InputBegan:Connect(function(input, gameProcessed)
+        local ka = State.Combat.killAura
+        if not ka.enabled or Library.Listening then return end
+        if os.clock() - Library.LastBind < 0.25 then return end
+        if Services.UserInputService:GetFocusedTextBox() then return end
+        if gameProcessed and input.UserInputType ~= Enum.UserInputType.Keyboard then return end
+        if Combat.MatchesKey(input) then
+            pcall(Combat.TryAttack)
+        end
+    end))
+end
+
+local function Initialize()
+    Env.CustomUtilityUnload = Cleanup.Run
+    Cleanup.Add(function() Config.Save(true) end)
+    Cleanup.Add(ESP.Stop)
+    Cleanup.Add(function() HUD.SetEnabled(false) end)
+    Cleanup.Add(TimeOfDay.Disable)
+    Cleanup.Add(function() Stamina.SetEnabled(false) end)
+    RespawnHandler.Setup()
+    local initialComponents = Utils.WaitForCharacterComponents(Player, 15)
+    if not initialComponents then
+        error("Character failed to load")
+    end
+    task.wait(RESPAWN_WAIT_TIME)
+    State.CharacterLoaded = true
+    SetupEventConnections()
+    UI.Initialize()
+    State.Initialized = true
+end
+
+local success, err = pcall(Initialize)
+if not success then
+    Cleanup.Run()
+end
